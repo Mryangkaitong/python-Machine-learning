@@ -1,0 +1,2 @@
+﻿线性回归算法：其中用到datasets.load_diabetes数据,这是一个糖尿病的数据集，data部分主要包括442行数据，10个属性值，分别是：Age(年龄)、性别(Sex)、Body mass index(体质指数)、Average Blood Pressure(平均血压)、S1~S6一年后疾病级数指标；Target为一年后患疾病的定量指标。改程序中只用了data中的一个参数作为自变量
+ 
