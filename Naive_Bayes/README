@@ -1,0 +1,12 @@
+﻿P(A|B)=P(A)×P(B|A)/P(B)
+用文字表述：后验概率=先验概率×相似度/标准化常量
+而朴素贝叶斯算法要解决的问题就是如何求出相似度即：P(B|A)的值[属性/特征]
+所谓朴素就是假设属性之间相互独立即P(B|A)=P(B1|A)P(B2|A)P(B3|A)P(B4|A)
+
+scikit-learn根据不同场景提供了三种常用的朴素贝叶斯算法：
+如果样本特征的分布大部分是连续值，使用GaussianNB会比较好。
+如果样本特征的分大部分是多元离散值，使用MultinomialNB比较合适。例如文本分类单词统计，以出现的次数作为特征值，https://www.jianshu.com/p/845b16559431
+如果样本特征是二元离散值或者很稀疏的多元离散值，应该使用BernoulliNB。
+
+三种算法的详细讲解见https://www.cnblogs.com/pinard/p/6074222.html
+python调用三种算法的详细讲解见https://blog.csdn.net/kancy110/article/details/72763276
