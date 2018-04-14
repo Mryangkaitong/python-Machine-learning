@@ -115,7 +115,7 @@ y_predict = nbc_5.predict(x_test)
 
 print(nbc_5.score(x_test, y_test))                     #预测准确率
 print(metrics.classification_report(y_test,y_predict)) #包含准确率，召回率等信息表
-print(metrics.confusion_matrix(y_test,y_predict))       #混淆矩阵
+print(metrics.confusion_matrix(y_test,y_predict))      #混淆矩阵
 
 '''
 正如https://blog.csdn.net/kancy110/article/details/72763276介绍的那样如果有的场景直接用
