@@ -1,0 +1,12 @@
+﻿随机森林算法：RandomForestClassifier(随机森林分类)、RandomForestRegressor(随机森林回归)
+
+集成学习是将多个模型进行组合来解决单一的预测问题。它的原理是生成多个分类器模型，各自独立地学习并作出预测。
+这些预测最后结合起来得到预测结果，因此和单独分类器的结果相比，结果一样或更好。
+随机森林是集成学习的一个分支，因为它依靠于决策树的集成。
+参考https://blog.csdn.net/sb19931201/article/details/52601058
+    http://python.jobbole.com/86811/
+
+另外随机森林里面有RandomForest和ExtraTrees区别和内容请看https://blog.csdn.net/mmc2015/article/details/47271195
+
+python关于随机森林函数的使用和调参见http://blog.sina.com.cn/s/blog_1442877660102wpj5.html
+                             https://blog.csdn.net/liyazhou0215/article/details/70183414
