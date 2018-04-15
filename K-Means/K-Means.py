@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.externals import joblib     #模块二
 import pandas as pd
+import matplotlib as mpl
 from scipy.spatial.distance import cdist #模块一
 from sklearn import metrics              #模块一
 
@@ -16,6 +17,10 @@ f.close()
 
 #转换成numpy array,形如:[[1.2 , 3.2],[2.3 , 6.3 ],[1.0 , 2.3]]，转化前X是一个列表
 X = np.array(X)
+
+mpl.rcParams['font.sans-serif'] = [u'SimHei']            #绘图时用来正常显示中文标签    
+mpl.rcParams['axes.unicode_minus'] = False               #绘图时用来正常显示负号
+
 
 '''
 #模块一：
@@ -34,34 +39,36 @@ for k in n_clusters:
 plt.subplot(121)
 plt.plot(n_clusters,meandistortions,'rx-')
 plt.xlabel('k')
-plt.ylabel('Averae distortion degree')
-plt.title('The elbows rule is used to determine the best K value')
+plt.ylabel('平均畸变程度')
+plt.title('K-Means平均畸变程度图(越小越好) ')
 #轮廓系数图
 plt.subplot(122)
 plt.plot(n_clusters,metrics_silhouette,'bx-')
-plt.ylabel('Averae distortion degree')
+plt.ylabel('轮廓系数')
 plt.xlabel('k')
-plt.title('The elbows rule is used to determine the best K value')
+plt.title('K-Means轮廓系数(越接近1越好)')
 #显示
 plt.show()
 
 '''
 
 
-    
-'''
+
+'''   
+
 #模块二：
-#核心代码:现在把数据和对应的分类书放入聚类函数中进行聚类
+#核心代码:现在把数据和对应的分类放入聚类函数中进行聚类
 #其中n_clusters 需要聚成几类，init代表初始点怎么找，max_iter代表迭代次数， n_jobs用的cpu，precompute_distances预先需不需要计算距离
+n_clusters=4
 clf=KMeans(n_clusters=n_clusters)
 cls = clf.fit(X)
 
 #聚类结果的显示,其中用clf和cls均可
-print(cls.labels_)  #显示每个样本所属的簇
-print(clf.cluster_centers_) #4个中心点的坐标
-print(clf.inertia_) #用来评估簇的个数是否合适，代表所有点到各自中心的距离和，距离越小说明簇分的越好，选取临界点的簇个数
+print(cls.labels_)                         #显示每个样本所属的簇
+print(clf.cluster_centers_)                #4个中心点的坐标
+print(clf.inertia_)                        #用来评估簇的个数是否合适，代表所有点到各自中心的距离和，距离越小说明簇分的越好，选取临界点的簇个数
 r1 = pd.Series(cls.labels_).value_counts()
-print(r1) #统计每个类别下样本个数
+print(r1)                                  #统计每个类别下样本个数
 
 #用聚类的学习结果去预测
 X1=[[121.35,26.41],[123.5,45.35]]
@@ -77,9 +84,9 @@ colors=['b','r','y','g']
 for i in range(n_clusters):
      members = cls.labels_ == i
      plt.scatter(X[members,0],X[members,1],s=60,marker=markers[i],c=colors[i],alpha=0.5)
-plt.xlabel('x')
-plt.ylabel('y')
-plt.title('Clustering results ')  
+plt.xlabel('经度')
+plt.ylabel('纬度')
+plt.title('K-Means聚合结果(n_clusters=4)')  
 plt.show()
 
 '''
