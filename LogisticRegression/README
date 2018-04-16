@@ -1,0 +1,5 @@
+﻿其中train_data.txt是训练集
+demand prediction.txt是测试集
+english_data里面是英文的邮件数据集
+chinese_data里面是中文的邮件数据集
+中文数据来源github.com/wandouqiang/RubbishMessage/tree/master/data
