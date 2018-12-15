@@ -8,7 +8,9 @@
 评价方式
     本赛题目标是预测投放的优惠券是否核销。针对此任务及一些相关背景知识，使用优惠券核销预测的平均AUC（ROC曲线下面积）作为评价标准。 即对每个优惠券coupon_id单独计算核销预测的AUC值，再对所有优惠券的AUC值求平均作为最终的评价标准。 关于AUC的含义与具体计算方法，可参考维基百科
     
+ 解题思路来源：https://github.com/wepe/O2O-Coupon-Usage-Forecast
  
+ 笔者这里进行了总结归纳
 
 DATA/data_origin是原始数据
 
