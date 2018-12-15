@@ -11,8 +11,11 @@
  
 
 DATA/data_origin是原始数据
+
 DATA/data_preprocessed是预处理过的数据
-code/ofoFeature.ipynb提取特征即由	data_origin生产data_preprocessed
+
+code/ofoFeature.ipynb提取特征即由	data_origin产生data_preprocessed
+
 code/Xgboost.ipynb模型训练
 
 更多解析请看笔者的博客：https://mp.csdn.net/postedit/85013073
