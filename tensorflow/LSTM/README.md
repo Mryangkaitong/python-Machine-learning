@@ -33,6 +33,6 @@ Model:LSTM模型训练及其测试
 准确率和损失率：
 
 ![image](https://github.com/Mryangkaitong/python-Machine-learning/blob/master/tensorflow/LSTM/photo/train.png)
-
+![image](https://github.com/Mryangkaitong/python-Machine-learning/blob/master/tensorflow/LSTM/photo/test.png)
 
 更多详细解析：https://blog.csdn.net/weixin_42001089/article/details/85231301
