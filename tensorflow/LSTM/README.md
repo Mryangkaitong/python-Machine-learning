@@ -24,7 +24,10 @@ Model:LSTM模型训练及其测试
 
 
 
-预测结果：
+部分结果：
+
+神经网络图：
+![image](https://github.com/Mryangkaitong/python-Machine-learning/blob/master/tensorflow/LSTM/photo/graph.png)
 
 
 
