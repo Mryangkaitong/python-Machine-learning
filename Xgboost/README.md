@@ -20,4 +20,4 @@ code/ofoFeature.ipynb提取特征即由	data_origin产生data_preprocessed
 
 code/Xgboost.ipynb模型训练
 
-更多解析请看笔者的博客：https://mp.csdn.net/postedit/85013073
+更多解析请看笔者的博客：https://blog.csdn.net/weixin_42001089/article/details/85013073?spm=5176.12282029.0.0.1738311fQ5fMqg
