@@ -1,1 +1,7 @@
-sentences_nlp.csv
+先使用pyltp_nlp.ipynb从articles.csv中提取信息得到sentences_nlp.csv
+
+将得到的sentences_nlp.csv放到transaction/input下即可
+
+后续就是通过python脚本将其导入到deepdive 的数据库中的sentences表
+
+之后的流程就基本一样啦
