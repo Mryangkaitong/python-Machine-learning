@@ -1,0 +1,5 @@
+MD5 (cws.model) = 88c35b61c437c0b92683b4fa17f11f03
+MD5 (ner.model) = 6599ec38c1a3b564b6743fa044892e6e
+MD5 (parser.model) = f1d5daa61cac15167517a60740a95c0b
+MD5 (pisrl.model) = 7c31be2573b9eaa13def19698d21ae6c
+MD5 (pos.model) = 423d6adc4b174bf44958905078da6a1c
