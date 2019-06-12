@@ -1,0 +1,26 @@
+#!/bin/bash
+ 
+[ `uname -s` != "Darwin" ] && return
+ 
+function tab () {
+    local name="$1"
+    local cmd=""
+    local cdto="$PWD"
+    local args="${@:2}"
+
+    echo "launching $args ..."
+ 
+    if [ -n "$args" ]; then
+        cmd="; $args"
+    fi
+
+    osascript &>/dev/null <<EOF
+        # automate command+t to split tab vertically
+        tell application "System Events" to tell process "Terminal" to keystroke "d" using command down
+        tell application "iTerm" to tell session -1 of current terminal 
+            set name to "$1"
+            write text "cd \"$cdto\"$cmd"            
+        end tell
+EOF
+}
+
