@@ -2,6 +2,6 @@
 
 将得到的sentences_nlp.csv放到transaction/input下即可
 
-然后就是通过udf/nlp_markup.py脚本将其导入到deepdive 的数据库中的sentences表
+然后就是通过udf/nlp_markup.py脚本将其解析并导入到deepdive 的数据库中的sentences表
 
-之后的流程就基本一样啦
+之后的流程就和deepdive官方给的demo基本一样啦
