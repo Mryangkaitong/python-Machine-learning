@@ -25,7 +25,6 @@ recognizer.load(os.path.join(LTP_DIR, 'ner.model'))
 parser = pyltp.Parser() 
 parser.load(os.path.join(LTP_DIR, 'parser.model'))  
 
-print("%%%%%%%%%%%%%%%%%%%%%%%%%%%%test%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",file=sys.stderr)
 
 
 @tsv_extractor
