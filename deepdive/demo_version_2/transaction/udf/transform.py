@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 #coding=utf-8
 #Program:
 #	transform the full name in pos* files into short name
