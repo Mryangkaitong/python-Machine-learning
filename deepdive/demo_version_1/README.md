@@ -1,4 +1,4 @@
-先使用pyltp_nlp.ipynb从articles.csv中提取信息得到sentences_nlp.csv(注意ltp包所使用的model请自行下载)
+先使用pyltp_nlp.ipynb从articles.csv中提取信息得到sentences_nlp.csv(注意ltp所使用的各种model请自行下载)
 
 将得到的sentences_nlp.csv放到transaction/input下即可
 
