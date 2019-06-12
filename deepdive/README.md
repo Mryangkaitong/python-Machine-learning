@@ -1,6 +1,6 @@
 针对deepdive信息抽取部分过慢的问题，这里采用ltp替换原先deepdive默认的斯坦福NLP提取包
 
-提出两种解决方法，其实demo_source 是deepdive官方提供的原始流程
+提出两种解决方法，demo_source 是deepdive官方提供的原始流程代码
 
 demo_version_1和demo_version_2是两种优化方法
 
