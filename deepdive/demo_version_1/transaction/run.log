@@ -1,0 +1,201 @@
+nohup: 忽略输入
+‘run/RUNNING’ -> ‘20190507/181108.371644533’
+‘run/LATEST’ -> ‘20190507/181108.371644533’
+2019-05-07 18:11:09.076139 # on tytest19: deepdive do transaction_label_resolved
+2019-05-07 18:11:09.076433 # run/20190507/181108.371644533/plan.sh
+2019-05-07 18:11:09.076499 # execution plan for data/transaction_label_resolved
+2019-05-07 18:11:09.076551 
+2019-05-07 18:11:09.076602 : ## process/init/app ##########################################################
+2019-05-07 18:11:09.076660 : # Done: 2019-05-06T18:04:41+0800 (1d 6m 27s ago)
+2019-05-07 18:11:09.076713 : process/init/app/run.sh
+2019-05-07 18:11:09.076768 : mark_done process/init/app
+2019-05-07 18:11:09.076828 : ##############################################################################
+2019-05-07 18:11:09.076876 
+2019-05-07 18:11:09.076927 
+2019-05-07 18:11:09.076987 : ## process/init/relation/articles ############################################
+2019-05-07 18:11:09.077039 : # Done: 2019-05-06T18:04:59+0800 (1d 6m 9s ago)
+2019-05-07 18:11:09.077091 : process/init/relation/articles/run.sh
+2019-05-07 18:11:09.077143 : mark_done process/init/relation/articles
+2019-05-07 18:11:09.077191 : ##############################################################################
+2019-05-07 18:11:09.077247 
+2019-05-07 18:11:09.077298 
+2019-05-07 18:11:09.077349 : ## data/articles #############################################################
+2019-05-07 18:11:09.077403 : # Done: 2019-05-06T18:04:59+0800 (1d 6m 9s ago)
+2019-05-07 18:11:09.077457 : # no-op
+2019-05-07 18:11:09.077509 : mark_done data/articles
+2019-05-07 18:11:09.077561 : ##############################################################################
+2019-05-07 18:11:09.077611 
+2019-05-07 18:11:09.077661 
+2019-05-07 18:11:09.077712 : ## process/ext_sentences_by_nlp_markup #######################################
+2019-05-07 18:11:09.077764 : # Done: 2019-05-07T02:41:12+0800 (15h 29m 56s ago)
+2019-05-07 18:11:09.077815 : process/ext_sentences_by_nlp_markup/run.sh
+2019-05-07 18:11:09.077867 : mark_done process/ext_sentences_by_nlp_markup
+2019-05-07 18:11:09.077918 : ##############################################################################
+2019-05-07 18:11:09.077969 
+2019-05-07 18:11:09.078035 
+2019-05-07 18:11:09.078088 : ## data/sentences ############################################################
+2019-05-07 18:11:09.078139 : # Done: 2019-05-07T02:41:12+0800 (15h 29m 56s ago)
+2019-05-07 18:11:09.078190 : # no-op
+2019-05-07 18:11:09.078241 : mark_done data/sentences
+2019-05-07 18:11:09.078293 : ##############################################################################
+2019-05-07 18:11:09.078344 
+2019-05-07 18:11:09.078395 
+2019-05-07 18:11:09.078445 : ## process/ext_company_mention_by_map_company_mention ########################
+2019-05-07 18:11:09.078497 : # Done: 2019-05-07T17:53:06+0800 (18m 2s ago)
+2019-05-07 18:11:09.078548 : process/ext_company_mention_by_map_company_mention/run.sh
+2019-05-07 18:11:09.078598 : mark_done process/ext_company_mention_by_map_company_mention
+2019-05-07 18:11:09.078650 : ##############################################################################
+2019-05-07 18:11:09.078701 
+2019-05-07 18:11:09.078751 
+2019-05-07 18:11:09.078802 : ## data/company_mention ######################################################
+2019-05-07 18:11:09.078856 : # Done: 2019-05-07T17:53:06+0800 (18m 2s ago)
+2019-05-07 18:11:09.078906 : # no-op
+2019-05-07 18:11:09.078957 : mark_done data/company_mention
+2019-05-07 18:11:09.079021 : ##############################################################################
+2019-05-07 18:11:09.079073 
+2019-05-07 18:11:09.079126 
+2019-05-07 18:11:09.079177 : ## process/ext_num_company ###################################################
+2019-05-07 18:11:09.079227 : # Done: 2019-05-07T17:56:37+0800 (14m 31s ago)
+2019-05-07 18:11:09.079279 : process/ext_num_company/run.sh
+2019-05-07 18:11:09.079331 : mark_done process/ext_num_company
+2019-05-07 18:11:09.079382 : ##############################################################################
+2019-05-07 18:11:09.079433 
+2019-05-07 18:11:09.079484 
+2019-05-07 18:11:09.079536 : ## data/num_company ##########################################################
+2019-05-07 18:11:09.079587 : # Done: 2019-05-07T17:56:37+0800 (14m 31s ago)
+2019-05-07 18:11:09.079638 : # no-op
+2019-05-07 18:11:09.079688 : mark_done data/num_company
+2019-05-07 18:11:09.079738 : ##############################################################################
+2019-05-07 18:11:09.079790 
+2019-05-07 18:11:09.079847 
+2019-05-07 18:11:09.079898 : ## process/ext_transaction_candidate_by_map_transaction_candidate ############
+2019-05-07 18:11:09.079949 : # Done: 2019-05-07T17:56:40+0800 (14m 28s ago)
+2019-05-07 18:11:09.080011 : process/ext_transaction_candidate_by_map_transaction_candidate/run.sh
+2019-05-07 18:11:09.080064 : mark_done process/ext_transaction_candidate_by_map_transaction_candidate
+2019-05-07 18:11:09.080116 : ##############################################################################
+2019-05-07 18:11:09.080171 
+2019-05-07 18:11:09.080225 
+2019-05-07 18:11:09.080277 : ## data/transaction_candidate ################################################
+2019-05-07 18:11:09.080325 : # Done: 2019-05-07T17:56:40+0800 (14m 28s ago)
+2019-05-07 18:11:09.080376 : # no-op
+2019-05-07 18:11:09.080427 : mark_done data/transaction_candidate
+2019-05-07 18:11:09.080479 : ##############################################################################
+2019-05-07 18:11:09.080530 
+2019-05-07 18:11:09.080580 
+2019-05-07 18:11:09.080631 : ## process/init/relation/transaction_dbdata ##################################
+2019-05-07 18:11:09.080683 : # Done: 2019-05-06T18:04:42+0800 (1d 6m 26s ago)
+2019-05-07 18:11:09.080735 : process/init/relation/transaction_dbdata/run.sh
+2019-05-07 18:11:09.080789 : mark_done process/init/relation/transaction_dbdata
+2019-05-07 18:11:09.080841 : ##############################################################################
+2019-05-07 18:11:09.080892 
+2019-05-07 18:11:09.080945 
+2019-05-07 18:11:09.081005 : ## data/transaction_dbdata ###################################################
+2019-05-07 18:11:09.081058 : # Done: 2019-05-06T18:04:42+0800 (1d 6m 26s ago)
+2019-05-07 18:11:09.081109 : # no-op
+2019-05-07 18:11:09.081160 : mark_done data/transaction_dbdata
+2019-05-07 18:11:09.081211 : ##############################################################################
+2019-05-07 18:11:09.081263 
+2019-05-07 18:11:09.081314 
+2019-05-07 18:11:09.081365 ## process/ext_transaction_label__0_by_supervise #############################
+2019-05-07 18:11:09.081419 # Done: N/A
+2019-05-07 18:11:09.081473 process/ext_transaction_label__0_by_supervise/run.sh
+2019-05-07 18:11:09.081524 ++ dirname process/ext_transaction_label__0_by_supervise/run.sh
+2019-05-07 18:11:09.081587 + cd process/ext_transaction_label__0_by_supervise
+2019-05-07 18:11:09.081639 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_transaction_label__0_by_supervise
+2019-05-07 18:11:09.081691 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_transaction_label__0_by_supervise
+2019-05-07 18:11:09.081743 + export DEEPDIVE_LOAD_FORMAT=tsv
+2019-05-07 18:11:09.081794 + DEEPDIVE_LOAD_FORMAT=tsv
+2019-05-07 18:11:09.081853 + deepdive compute execute 'input_sql= SELECT R0.p1_id AS "transaction_candidate.R0.p1_id", R1.begin_index AS "company_mention.R1.begin_index", R1.end_index AS "company_mention.R1.end_index", R0.p2_id AS "transaction_candidate.R0.p2_id", R2.begin_index AS "company_mention.R2.begin_index", R2.end_index AS "company_mention.R2.end_index", R1.doc_id AS "company_mention.R1.doc_id", R1.sentence_index AS "company_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2019-05-07 18:11:09.081905 FROM transaction_candidate R0, company_mention R1, company_mention R2, sentences R3
+2019-05-07 18:11:09.081958         WHERE R1.mention_id = R0.p1_id  AND R2.mention_id = R0.p2_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2019-05-07 18:11:09.082021           ' 'command="$DEEPDIVE_APP"/udf/supervise_transaction.py' output_relation=transaction_label__0
+2019-05-07 18:11:09.119715 Executing with the following configuration:
+2019-05-07 18:11:09.119849  DEEPDIVE_NUM_PROCESSES=31
+2019-05-07 18:11:09.119952  DEEPDIVE_NUM_PARALLEL_UNLOADS=1
+2019-05-07 18:11:09.120042  DEEPDIVE_NUM_PARALLEL_LOADS=1
+2019-05-07 18:11:09.120138  output_relation_tmp=dd_tmp_transaction_label__0
+2019-05-07 18:11:09.120225 
+2019-05-07 18:11:09.360728 注意:  表 "transaction_label__0" 不存在
+2019-05-07 18:11:09.376666 CREATE TABLE
+2019-05-07 18:11:09.484702 CREATE TABLE
+2019-05-07 18:11:09.901141 unloading to feed_processes-1: ' SELECT R0.p1_id AS "transaction_candidate.R0.p1_id", R1.begin_index AS "company_mention.R1.begin_index", R1.end_index AS "company_mention.R1.end_index", R0.p2_id AS "transaction_candidate.R0.p2_id", R2.begin_index AS "company_mention.R2.begin_index", R2.end_index AS "company_mention.R2.end_index", R1.doc_id AS "company_mention.R1.doc_id", R1.sentence_index AS "company_mention.R1.sentence_index", R3.sentence_text AS "sentences.R3.sentence_text", R3.tokens AS "sentences.R3.tokens", R3.lemmas AS "sentences.R3.lemmas", R3.pos_tags AS "sentences.R3.pos_tags", R3.ner_tags AS "sentences.R3.ner_tags", R3.dep_types AS "sentences.R3.dep_types", R3.dep_tokens AS "sentences.R3.dep_tokens"
+2019-05-07 18:11:09.901631 FROM transaction_candidate R0, company_mention R1, company_mention R2, sentences R3
+2019-05-07 18:11:09.901759         WHERE R1.mention_id = R0.p1_id  AND R2.mention_id = R0.p2_id  AND R3.doc_id = R1.doc_id  AND R3.sentence_index = R1.sentence_index 
+2019-05-07 18:11:09.901943           '
+2019-05-07 18:11:09.950698 Loading dd_tmp_transaction_label__0 from output_computed-1 (tsv format)
+2019-05-07 18:11:10.604275 COPY 376
+2019-05-07 18:11:10.609060 Replacing transaction_label__0 with dd_tmp_transaction_label__0
+2019-05-07 18:11:10.776208 DROP TABLE
+2019-05-07 18:11:11.039155 ALTER TABLE
+2019-05-07 18:11:11.265336 ALTER TABLE
+2019-05-07 18:11:11.457815 DROP TABLE
+2019-05-07 18:11:11.512669 ANALYZE
+2019-05-07 18:11:11.529311 mark_done process/ext_transaction_label__0_by_supervise
+2019-05-07 18:11:11.547322 ##############################################################################
+2019-05-07 18:11:11.547990 
+2019-05-07 18:11:11.548032 
+2019-05-07 18:11:11.548062 ## data/transaction_label__0 #################################################
+2019-05-07 18:11:11.548098 # Done: N/A
+2019-05-07 18:11:11.548133 # no-op
+2019-05-07 18:11:11.548170 mark_done data/transaction_label__0
+2019-05-07 18:11:11.557143 ##############################################################################
+2019-05-07 18:11:11.557181 
+2019-05-07 18:11:11.557211 
+2019-05-07 18:11:11.557238 ## process/ext_transaction_label #############################################
+2019-05-07 18:11:11.557261 # Done: N/A
+2019-05-07 18:11:11.557289 process/ext_transaction_label/run.sh
+2019-05-07 18:11:11.564701 ++ dirname process/ext_transaction_label/run.sh
+2019-05-07 18:11:11.566908 + cd process/ext_transaction_label
+2019-05-07 18:11:11.567308 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_transaction_label
+2019-05-07 18:11:11.567346 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_transaction_label
+2019-05-07 18:11:11.567374 + deepdive create table transaction_label
+2019-05-07 18:11:11.690312 注意:  表 "transaction_label" 不存在
+2019-05-07 18:11:11.720121 CREATE TABLE
+2019-05-07 18:11:11.725904 + deepdive sql 'INSERT INTO transaction_label SELECT R0.p1_id AS "transaction_candidate.R0.p1_id", R0.p2_id AS "transaction_candidate.R0.p2_id", 0 AS column_2, NULL AS column_3
+2019-05-07 18:11:11.726075 FROM transaction_candidate R0
+2019-05-07 18:11:11.726135         
+2019-05-07 18:11:11.726181 UNION ALL
+2019-05-07 18:11:11.726244 SELECT R0.p1_id AS "transaction_candidate.R0.p1_id", R0.p2_id AS "transaction_candidate.R0.p2_id", 3 AS column_2, '\''from_dbdata'\'' AS column_3
+2019-05-07 18:11:11.726299 FROM transaction_candidate R0, transaction_dbdata R1
+2019-05-07 18:11:11.726350         WHERE ((lower(R1.company1_name) = lower(R0.p1_name) AND lower(R1.company2_name) = lower(R0.p2_name)) OR (lower(R1.company2_name) = lower(R0.p1_name) AND lower(R1.company1_name) = lower(R0.p2_name)))
+2019-05-07 18:11:11.726406 UNION ALL
+2019-05-07 18:11:11.726461 SELECT R0.p1_id AS "transaction_label__0.R0.p1_id", R0.p2_id AS "transaction_label__0.R0.p2_id", R0.label AS "transaction_label__0.R0.label", R0.rule_id AS "transaction_label__0.R0.rule_id"
+2019-05-07 18:11:11.726510 FROM transaction_label__0 R0
+2019-05-07 18:11:11.726563         '
+2019-05-07 18:11:21.300099 INSERT 0 662
+2019-05-07 18:11:21.304346 mark_done process/ext_transaction_label
+2019-05-07 18:11:21.319550 ##############################################################################
+2019-05-07 18:11:21.319626 
+2019-05-07 18:11:21.319676 
+2019-05-07 18:11:21.319717 ## data/transaction_label ####################################################
+2019-05-07 18:11:21.319757 # Done: N/A
+2019-05-07 18:11:21.319806 # no-op
+2019-05-07 18:11:21.319829 mark_done data/transaction_label
+2019-05-07 18:11:21.331967 ##############################################################################
+2019-05-07 18:11:21.332538 
+2019-05-07 18:11:21.332601 
+2019-05-07 18:11:21.332673 ## process/ext_transaction_label_resolved ####################################
+2019-05-07 18:11:21.332726 # Done: N/A
+2019-05-07 18:11:21.332797 process/ext_transaction_label_resolved/run.sh
+2019-05-07 18:11:21.337182 ++ dirname process/ext_transaction_label_resolved/run.sh
+2019-05-07 18:11:21.339110 + cd process/ext_transaction_label_resolved
+2019-05-07 18:11:21.339310 + export DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_transaction_label_resolved
+2019-05-07 18:11:21.339369 + DEEPDIVE_CURRENT_PROCESS_NAME=process/ext_transaction_label_resolved
+2019-05-07 18:11:21.339428 + deepdive create view transaction_label_resolved as 'SELECT R0.p1_id AS column_0, R0.p2_id AS column_1, SUM(R0.label) AS column_2
+2019-05-07 18:11:21.339484 FROM transaction_label R0
+2019-05-07 18:11:21.339536         
+2019-05-07 18:11:21.339587         GROUP BY R0.p1_id, R0.p2_id'
+2019-05-07 18:11:21.489335 CREATE VIEW
+2019-05-07 18:11:21.490532 mark_done process/ext_transaction_label_resolved
+2019-05-07 18:11:21.501859 ##############################################################################
+2019-05-07 18:11:21.502031 
+2019-05-07 18:11:21.502094 
+2019-05-07 18:11:21.502158 ## data/transaction_label_resolved ###########################################
+2019-05-07 18:11:21.502212 # Done: N/A
+2019-05-07 18:11:21.502264 # no-op
+2019-05-07 18:11:21.502318 mark_done data/transaction_label_resolved
+2019-05-07 18:11:21.512652 ##############################################################################
+2019-05-07 18:11:21.512758 
+2019-05-07 18:11:21.512834 
+‘run/FINISHED’ -> ‘run/FINISHED~’
+‘run/FINISHED’ -> ‘20190507/181108.371644533’
