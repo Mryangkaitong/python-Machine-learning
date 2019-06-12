@@ -1,0 +1,40 @@
+#!/bin/bash
+
+echo "Create parser package"
+
+INSTALLER_DIR="$(pwd)"
+PARSER_DIR=../../parser
+
+cd $PARSER_DIR
+tar cf $INSTALLER_DIR/payload/parser.tar \
+    build.sbt \
+    src \
+    run.sh \
+    run_parallel.sh \
+    project \
+    sbt \
+    setup.sh
+
+echo "Create self-extracting installer"
+
+cd $INSTALLER_DIR/payload
+tar cf ../payload.tar ./*
+cd ..
+
+if [ -e "payload.tar" ]; then
+    gzip payload.tar
+
+    if [ -e "payload.tar.gz" ]; then
+        cat decompress payload.tar.gz > install-parser
+    else
+        echo "payload.tar.gz does not exist"
+        exit 1
+    fi
+else
+    echo "payload.tar does not exist"
+    exit 1
+fi
+
+chmod +x install-parser
+echo "install-parser created"
+exit 0

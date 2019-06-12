@@ -1,0 +1,47 @@
+#!/bin/bash
+echo "Running Installer"
+rm -rf $HOME/parser
+mkdir $HOME/parser
+tar xf ./parser.tar -C $HOME/parser
+
+# install java?
+if type -p java; then
+    echo "Found java"    
+else
+    sys=`uname -s`
+    if [ ! "$sys" == "Linux" ]; then
+       echo "Only supporting Ubuntu"
+       exit 1
+    fi
+    #echo "Getting openjdk"
+    #mkdir /tmp/openjdk
+    #cd /tmp/openjdk
+    #apt-get -y --print-uris install openjdk-7-jdk | grep "http.*deb" -o | xargs -0 echo
+    #apt-get -y --print-uris install openjdk-7-jdk | grep "http.*deb" -o | xargs -0 wget
+    #for d in *.deb; do dpkg -x "$d" openjdk; done
+    #rm *.deb
+    #_java=/tmp/openjdk/TODO
+
+    cd $HOME
+    wget --no-check-certificate --no-cookies --header "Cookie: oraclelicense=accept-securebackup-cookie" http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.tar.gz
+    tar xvzf jdk-8u45-linux-x64.tar.gz
+
+    echo 'export PATH=~/jdk1.8.0_45/bin:$PATH' >> ~/.bashrc
+    echo 'export JAVA_HOME=~/jdk1.8.0_45' >> ~/.bashrc
+    export PATH=~/jdk1.8.0_45/bin:$PATH
+    export JAVA_HOME=~/jdk1.8.0_45
+fi
+
+DIRNAME=$HOME/parser
+DESTDIR=$DIRNAME/lib
+FILENAME='stanford-srparser-2014-10-23-models.jar'
+if [ ! -e "$DESTDIR/$FILENAME" ]; then
+    mkdir -p $DESTDIR
+    wget -P $DESTDIR http://nlp.stanford.edu/software/stanford-srparser-2014-10-23-models.jar
+else
+    echo "Skipping download: $DESTDIR/$FILENAME already exists"
+fi
+
+cd $HOME/parser
+which java
+sbt/sbt stage
