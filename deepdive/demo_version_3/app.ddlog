@@ -1,0 +1,429 @@
+@source
+zhiya_record(
+    @key
+    company1_name text,
+    @key
+    company2_name text
+).
+
+@source
+danbao_record(
+    @key
+    company1_name text,
+    @key
+    company2_name text
+).
+
+@source
+zhiya_articles(
+    id text,
+    content text
+).
+
+@source
+danbao_articles(
+    id text,
+    content text
+).
+
+
+zhiya_sentences(
+    doc_id	text,
+    sentence_index	int,
+    sentence_text	text,
+    tokens	text[],
+    lemmas	text[],
+    pos_tags	text[],
+    ner_tags	text[],
+    dep_types	text[],
+    dep_tokens	int[]
+).
+danbao_sentences(
+    doc_id	text,
+    sentence_index	int,
+    sentence_text	text,
+    tokens	text[],
+    lemmas	text[],
+    pos_tags	text[],
+    ner_tags	text[],
+    dep_types	text[],
+    dep_tokens	int[]
+).
+function nlp_markup over (
+    doc_id    text,
+    content   text
+) returns rows like zhiya_sentences
+implementation "udf/nlp_markup.py" handles tsv lines.
+
+function nlp_markup over (
+    doc_id    text,
+    content   text
+) returns rows like danbao_sentences
+implementation "udf/nlp_markup.py" handles tsv lines.
+
+zhiya_sentences += nlp_markup(doc_id,content) :-
+zhiya_articles(doc_id,content).
+
+danbao_sentences += nlp_markup(doc_id,content) :-
+danbao_articles(doc_id,content).
+
+zhiya_company_mention(
+    mention_id	text,
+    mention_text	text,
+    doc_id	text,
+    sentence_index	int,
+    begin_index	int,
+    end_index	int
+).
+
+danbao_company_mention(
+    mention_id	text,
+    mention_text	text,
+    doc_id	text,
+    sentence_index	int,
+    begin_index	int,
+    end_index	int
+).
+
+function map_company_mention over (
+    doc_id	text,
+    sentence_index	int,
+    tokens	text[],
+    ner_tags	text[]
+) returns rows like zhiya_company_mention
+implementation "udf/map_company_mention.py" handles tsv lines.
+
+function map_company_mention over (
+    doc_id	text,
+    sentence_index	int,
+    tokens	text[],
+    ner_tags	text[]
+) returns rows like danbao_company_mention
+implementation "udf/map_company_mention.py" handles tsv lines.
+
+zhiya_company_mention += map_company_mention(
+doc_id, sentence_index, tokens, ner_tags
+) :-
+zhiya_sentences(doc_id, sentence_index, _, tokens, _, _, ner_tags, _, _).
+
+danbao_company_mention += map_company_mention(
+doc_id, sentence_index, tokens, ner_tags
+) :-
+danbao_sentences(doc_id, sentence_index, _, tokens, _, _, ner_tags, _, _).
+
+
+zhiya_candidate(
+    p1_id	text,
+    p1_name	text,
+    p2_id	text,
+    p2_name	text
+).
+
+
+danbao_candidate(
+    p1_id	text,
+    p1_name	text,
+    p2_id	text,
+    p2_name	text
+).
+
+
+zhiya_num_company(doc_id, sentence_index, COUNT(p)) :-
+zhiya_company_mention(p, _, doc_id, sentence_index, _, _).
+
+danbao_num_company(doc_id, sentence_index, COUNT(p)) :-
+danbao_company_mention(p, _, doc_id, sentence_index, _, _).
+
+function map_transaction_candidate over (
+    p1_id	text,
+    p1_name	text,
+    p2_id	text,
+    p2_name	text
+) returns rows like zhiya_candidate
+implementation "udf/map_transaction_candidate.py" handles tsv lines.
+
+function map_transaction_candidate over (
+    p1_id	text,
+    p1_name	text,
+    p2_id	text,
+    p2_name	text
+) returns rows like danbao_candidate
+implementation "udf/map_transaction_candidate.py" handles tsv lines.
+
+zhiya_candidate += map_transaction_candidate(p1, p1_name, p2, p2_name) :-
+zhiya_num_company(same_doc, same_sentence, num_p),
+zhiya_company_mention(p1, p1_name, same_doc, same_sentence, p1_begin, p1_end),
+zhiya_company_mention(p2, p2_name, same_doc, same_sentence, p2_begin, _),
+num_p < 5,
+p1_end<p2_begin,
+p1_name != p2_name,
+p1_begin != p2_begin.
+danbao_candidate += map_transaction_candidate(p1, p1_name, p2, p2_name) :-
+danbao_num_company(same_doc, same_sentence, num_p),
+danbao_company_mention(p1, p1_name, same_doc, same_sentence, p1_begin, p1_end),
+danbao_company_mention(p2, p2_name, same_doc, same_sentence, p2_begin,_),
+num_p < 5,
+p1_end<p2_begin,
+p1_name != p2_name,
+p1_begin != p2_begin.
+
+
+zhiya_feature(
+    p1_id	text,
+    p2_id	text,
+    feature	text
+).
+
+danbao_feature(
+    p1_id	text,
+    p2_id	text,
+    feature	text
+).
+
+
+
+function extract_transaction_features over (
+    p1_id	text,
+    p2_id	text,
+    p1_begin_index	int,
+    p1_end_index	int,
+    p2_begin_index	int,
+    p2_end_index	int,
+    doc_id	text,
+    sent_index	int,
+    tokens	text[],
+    lemmas	text[],
+    pos_tags	text[],
+    ner_tags	text[],
+    dep_types	text[],
+    dep_tokens	int[]
+) returns rows like zhiya_feature
+implementation "udf/extract_transaction_features.py" handles tsv lines.
+
+function extract_transaction_features over (
+    p1_id	text,
+    p2_id	text,
+    p1_begin_index	int,
+    p1_end_index	int,
+    p2_begin_index	int,
+    p2_end_index	int,
+    doc_id	text,
+    sent_index	int,
+    tokens	text[],
+    lemmas	text[],
+    pos_tags	text[],
+    ner_tags	text[],
+    dep_types	text[],
+    dep_tokens	int[]
+) returns rows like danbao_feature
+implementation "udf/extract_transaction_features.py" handles tsv lines.
+
+zhiya_feature += extract_transaction_features(
+p1_id, p2_id, p1_begin_index, p1_end_index, p2_begin_index, p2_end_index,
+doc_id, sent_index, tokens, lemmas, pos_tags, ner_tags, dep_types, dep_tokens
+) :-
+zhiya_company_mention(p1_id, _, doc_id, sent_index, p1_begin_index, p1_end_index),
+zhiya_company_mention(p2_id, _, doc_id, sent_index, p2_begin_index, p2_end_index),
+zhiya_sentences(doc_id, sent_index, _, tokens, lemmas, pos_tags, ner_tags,dep_types,
+dep_tokens).
+
+
+danbao_feature += extract_transaction_features(
+p1_id, p2_id, p1_begin_index, p1_end_index, p2_begin_index, p2_end_index,
+doc_id, sent_index, tokens, lemmas, pos_tags, ner_tags, dep_types, dep_tokens
+) :-
+danbao_company_mention(p1_id, _, doc_id, sent_index, p1_begin_index, p1_end_index),
+danbao_company_mention(p2_id, _, doc_id, sent_index, p2_begin_index, p2_end_index),
+danbao_sentences(doc_id, sent_index, _, tokens, lemmas, pos_tags, ner_tags,dep_types,
+dep_tokens).
+
+
+
+@extraction
+zhiya_label(
+    @key
+    @references(relation="has_zhiya", column="p1_id", alias="has_zhiya")
+    p1_id	text,
+    @key
+    @references(relation="has_zhiya", column="p2_id", alias="has_zhiya")
+    p2_id	text,
+    @navigable
+    label	int,
+    @navigable
+    rule_id	text
+).
+
+
+danbao_label(
+    @key
+    @references(relation="has_danbao", column="p1_id", alias="has_danbao")
+    p1_id	text,
+    @key
+    @references(relation="has_danbao", column="p2_id", alias="has_danbao")
+    p2_id	text,
+    @navigable
+    label	int,
+    @navigable
+    rule_id	text
+).
+
+zhiya_label(p1, p2, 0, NULL) :- zhiya_candidate(p1, _, p2, _).
+danbao_label(p1, p2, 0, NULL) :- danbao_candidate(p1, _, p2, _).
+
+zhiya_label(p1,p2, 3, "from_dbdata") :-
+zhiya_candidate(p1, p1_name, p2, p2_name), zhiya_record(n1, n2),
+[ lower(n1) = lower(p1_name), lower(n2) = lower(p2_name) ;
+lower(n2) = lower(p1_name), lower(n1) = lower(p2_name) ].
+
+danbao_label(p1,p2, 3, "from_dbdata") :-
+danbao_candidate(p1, p1_name, p2, p2_name), danbao_record(n1, n2),
+[ lower(n1) = lower(p1_name), lower(n2) = lower(p2_name) ;
+lower(n2) = lower(p1_name), lower(n1) = lower(p2_name) ].
+
+
+function zhiya_supervise over (
+    p1_id text,p1_name text, p1_begin int, p1_end int,
+    p2_id text,p2_name text, p2_begin int, p2_end int,
+    doc_id	text,
+    sentence_index	int,
+    sentence_text	text,
+    tokens	text[],
+    lemmas	text[],
+    pos_tags	text[],
+    ner_tags	text[],
+    dep_types	text[],
+    dep_tokens	int[]
+) returns (
+    p1_id text, p2_id text, label int, rule_id text
+)
+implementation "udf/zhiya_supervise.py" handles tsv lines.
+
+
+function danbao_supervise over (
+    p1_id text,p1_name text, p1_begin int, p1_end int,
+    p2_id text,p2_name text, p2_begin int, p2_end int,
+    doc_id	text,
+    sentence_index	int,
+    sentence_text	text,
+    tokens	text[],
+    lemmas	text[],
+    pos_tags	text[],
+    ner_tags	text[],
+    dep_types	text[],
+    dep_tokens	int[]
+) returns (
+    p1_id text, p2_id text, label int, rule_id text
+)
+implementation "udf/danbao_supervise.py" handles tsv lines.
+
+
+
+
+zhiya_label += zhiya_supervise(
+p1_id, p1_text,p1_begin, p1_end,
+p2_id, p2_text,p2_begin, p2_end,
+doc_id, sentence_index, sentence_text,
+tokens, lemmas, pos_tags, ner_tags, dep_types, dep_token_indexes
+) :-
+zhiya_candidate(p1_id, p1_text, p2_id, p2_text),
+zhiya_company_mention(p1_id, _, doc_id, sentence_index, p1_begin, p1_end),
+zhiya_company_mention(p2_id, _, _, _, p2_begin, p2_end),
+zhiya_sentences(
+    doc_id, sentence_index, sentence_text,
+    tokens, lemmas, pos_tags, ner_tags,dep_types, dep_token_indexes
+).
+
+danbao_label += danbao_supervise(
+p1_id, p1_text,p1_begin, p1_end,
+p2_id, p2_text,p2_begin, p2_end,
+doc_id, sentence_index, sentence_text,
+tokens, lemmas, pos_tags, ner_tags, dep_types, dep_token_indexes
+) :-
+danbao_candidate(p1_id, p1_text, p2_id, p2_text),
+danbao_company_mention(p1_id, _, doc_id, sentence_index, p1_begin, p1_end),
+danbao_company_mention(p2_id, _, _, _, p2_begin, p2_end),
+danbao_sentences(
+    doc_id, sentence_index, sentence_text,
+    tokens, lemmas, pos_tags, ner_tags,dep_types, dep_token_indexes
+).
+
+zhiya_label_resolved(p1_id, p2_id, SUM(vote)) :-zhiya_label(p1_id, p2_id, vote, rule_id).
+danbao_label_resolved(p1_id, p2_id, SUM(vote)) :-danbao_label(p1_id, p2_id, vote, rule_id).
+
+
+zhiya_label_test_train(
+    p1_id	text,
+    p2_id	text,
+    vote_sum	int,
+	test_train_flag int
+).
+
+function generate_train_test over (
+    p1_id	    text,
+    p2_id	    text,
+    vote_sum    int
+) returns rows like zhiya_label_test_train
+implementation "udf/generate_train_test_flag.py" handles tsv lines.
+
+zhiya_label_test_train += generate_train_test(
+p1_id, o2_id, vote_sum
+) :-
+zhiya_label_resolved(p1_id, o2_id, vote_sum).
+
+
+danbao_label_test_train(
+    p1_id	text,
+    p2_id	text,
+    vote_sum	int,
+	test_train_flag int
+).
+
+function generate_train_test over (
+    p1_id	    text,
+    p2_id	    text,
+    vote_sum    int
+) returns rows like danbao_label_test_train
+implementation "udf/generate_train_test_flag.py" handles tsv lines.
+
+danbao_label_test_train += generate_train_test(
+p1_id, o2_id, vote_sum
+) :-
+danbao_label_resolved(p1_id, o2_id, vote_sum).
+
+
+@extraction
+has_zhiya?(
+    p1_id	text,
+    p2_id	text
+).
+
+@extraction
+has_danbao?(
+    p1_id	text,
+    p2_id	text
+).
+
+
+has_zhiya(p1_id, p2_id) = if test_train_flag > 2 then if vote_sum>0 then TRUE 
+                                                      else if vote_sum<0 then FALSE 
+													  else NULL end             
+                                else NULL end :- zhiya_label_test_train(p1_id, p2_id, vote_sum,test_train_flag).
+
+has_danbao(p1_id, p2_id) = if test_train_flag > 2 then if vote_sum>0 then TRUE 
+                                                      else if vote_sum<0 then FALSE 
+													  else NULL  end            
+                                else NULL end :- danbao_label_test_train(p1_id, p2_id, vote_sum,test_train_flag).
+							
+@weight(f)
+has_zhiya(p1_id, p2_id) :-
+zhiya_candidate(p1_id, _, p2_id, _),
+zhiya_feature(p1_id, p2_id, f).
+
+@weight(f)
+has_danbao(p1_id, p2_id) :-
+danbao_candidate(p1_id, _, p2_id, _),
+danbao_feature(p1_id, p2_id, f).
+
+@weight(3.0)
+has_zhiya(p1_id, p2_id) => ! has_zhiya(p2_id, p1_id) :-
+zhiya_candidate(p1_id, _, p2_id, _).
