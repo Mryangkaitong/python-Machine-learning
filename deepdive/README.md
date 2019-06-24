@@ -2,7 +2,7 @@
 
 提出两种解决方法，demo_source 是deepdive官方提供的原始流程代码
 
-demo_version_1和demo_version_2是两种优化方法
+demo_version_1和demo_version_2是两种优化方法,demo_version_3是多种关系抽取demo
 
 更多解析：
 
