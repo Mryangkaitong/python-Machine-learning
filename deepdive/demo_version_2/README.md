@@ -3,4 +3,4 @@
 
 记得udf下的python脚本要符合python3的写法
 
-运行流程没变
+运行流程没变，详细流程https://blog.csdn.net/weixin_42001089/article/details/91388707
