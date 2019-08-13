@@ -7,6 +7,8 @@ demo_version_1和demo_version_2是两种优化方法,demo_version_3是多种关�
 
 其中deepdive有打标环节，需要人工定义规则，为此为了减轻工作量，可以先运行脚本text_statistics.py得到一些文本的统计信息，其输入是文本和label，输出是rule_reference.txt
 
+备用下载链接：https://pan.baidu.com/s/1JR7L_pCIXFLLjrbRSOJw9A 提取码：obn7
+
 更多解析：
 
 https://blog.csdn.net/weixin_42001089/article/details/90749577
