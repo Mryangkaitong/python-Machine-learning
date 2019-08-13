@@ -1,0 +1,3088 @@
+Rule hierarchy has 377 rules, 14 levels, 85 rules have children, root rule has 264 direct children
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 和 ENTITY2:person
+[#TRAIN DECISION] 157 [Mean Prob] 0.9266573363706162 [Example Ids] [254135, 255956, 268646, 267261, 273866]
+[#TRAIN MATCH] 947 [Acc] 0.47940865892291445 [Example Ids] [243487, 269963, 106354, 261308, 272169]
+[#DEV MATCH] 5 [Acc] 0.6 [Example Ids] [267765, 187068, 276240, 95870, 249907]
+[#TEST MATCH] 358 [Acc] 0.4748603351955307 [Example Ids] [251309, 267748, 285483, 174183, 272169]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x4,9 和
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9634943754383997 [Example Ids] [252248, 64387, 72179]
+        [#TRAIN MATCH] 34 [Acc] 0.5 [Example Ids] [267764, 264030, 255992, 78217, 255754]
+        [#DEV MATCH] 2 [Acc] 1.0 [Example Ids] [267765, 276240]
+        [#TEST MATCH] 11 [Acc] 0.45454545454545453 [Example Ids] [256007, 255908, 20508, 199703, 64387]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person 在
+        [#TRAIN DECISION] 6 [Mean Prob] 0.844437753312465 [Example Ids] [267773, 93702, 254678, 220179, 188722]
+        [#TRAIN MATCH] 56 [Acc] 0.7142857142857143 [Example Ids] [249910, 267389, 143042, 270639, 255851]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 24 [Acc] 0.6666666666666666 [Example Ids] [267748, 267735, 256050, 274473, 245945]
+[Child] [Child] ==============================
+                [LEVEL] 6
+                [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 印尼 巴厘岛
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9859399531068614 [Example Ids] [267389, 267406, 267416]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267389, 267416, 267406]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267416, 267406, 267389]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 在 <pad>x4,9 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8696836734732377 [Example Ids] [282439, 278324, 231968]
+        [#TRAIN MATCH] 43 [Acc] 0.5581395348837209 [Example Ids] [281393, 255992, 41795, 274489, 134299]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 17 [Acc] 0.5294117647058824 [Example Ids] [175066, 257978, 281393, 267111, 271969]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9718816833580893 [Example Ids] [272881, 269951, 277975, 271806]
+        [#TRAIN MATCH] 34 [Acc] 0.8529411764705882 [Example Ids] [267389, 8064, 274128, 267735, 269951]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 16 [Acc] 0.875 [Example Ids] [267748, 267735, 255839, 282586, 267416]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 婚礼
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9843057536466753 [Example Ids] [274128, 282586, 279926]
+                [#TRAIN MATCH] 5 [Acc] 0.6 [Example Ids] [8064, 274128, 282586, 266617, 279926]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [282586, 8064, 266617]
+[Child] [Child] ==============================
+                [LEVEL] 6
+                [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 印尼 巴厘岛
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9859399531068614 [Example Ids] [267389, 267406, 267416]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267389, 267416, 267406]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267416, 267406, 267389]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 注册 结婚 <pad>x1,3 数日 <pad>x1,3 登报 <pad>x1,3 亲友
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9874579299621976 [Example Ids] [267749, 267780, 267740]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267780, 267740, 267749]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267749]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x4,9 到
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8535512952125527 [Example Ids] [94886, 200132, 17061]
+        [#TRAIN MATCH] 17 [Acc] 0.35294117647058826 [Example Ids] [143042, 205190, 200132, 94886, 267261]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [271969, 257945, 198480, 277498, 143042]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 结婚
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9762256276823291 [Example Ids] [67061, 257945, 255851]
+        [#TRAIN MATCH] 17 [Acc] 0.8235294117647058 [Example Ids] [133532, 255851, 267735, 256181, 67061]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 8 [Acc] 0.875 [Example Ids] [267748, 267735, 133532, 267749, 257945]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 注册 结婚 <pad>x1,3 数日 <pad>x1,3 登报 <pad>x1,3 亲友
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9874579299621976 [Example Ids] [267749, 267780, 267740]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267780, 267740, 267749]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267749]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 在 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8394438829812274 [Example Ids] [212752, 154638, 23026]
+        [#TRAIN MATCH] 15 [Acc] 0.4 [Example Ids] [256081, 273172, 172507, 255956, 272963]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [255908, 256081, 23026, 138029, 9704]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x4,9 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9744109268511317 [Example Ids] [282793, 10524, 180740]
+        [#TRAIN MATCH] 14 [Acc] 0.5 [Example Ids] [255863, 142434, 282793, 256050, 280242]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 0.6 [Example Ids] [256050, 273570, 255863, 198480, 10524]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person 也
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8761259070547958 [Example Ids] [131659, 204447, 277641]
+        [#TRAIN MATCH] 12 [Acc] 0.4166666666666667 [Example Ids] [262652, 271040, 134081, 277641, 6270]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 0.6 [Example Ids] [6270, 255781, 154649, 273841, 262652]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 也
+        [#TRAIN DECISION] 5 [Mean Prob] 0.8522975758444282 [Example Ids] [273485, 272139, 268646, 204383, 239396]
+        [#TRAIN MATCH] 9 [Acc] 0.2222222222222222 [Example Ids] [268646, 78217, 239396, 9704, 272139]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [268646, 272139, 9704]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x4,9 ?
+        [#TRAIN DECISION] 4 [Mean Prob] 0.8602394176344006 [Example Ids] [272169, 262663, 262649, 243487]
+        [#TRAIN MATCH] 6 [Acc] 0.5 [Example Ids] [243487, 272169, 262663, 262633, 262649]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [272169, 262649, 243487, 262633]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 结婚 <pad>x4,9 家庭和睦
+        [#TRAIN DECISION] 5 [Mean Prob] 0.9814683030812791 [Example Ids] [278398, 278410, 278412, 278414, 278406]
+        [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [278406, 278414, 278398, 278412, 278410]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278410, 278398]
+[Child] [Child] ==============================
+                [LEVEL] 6
+                [RULE] ENTITY1:person 和 ENTITY2:person 结婚 <pad>x1,3 二女 <pad>x1,3 家庭和睦
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9875713960870781 [Example Ids] [278398, 278410, 278412]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [278398, 278412, 278410]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278410, 278398]
+[Child] [Child] ==============================
+                [LEVEL] 7
+                [RULE] ENTITY1:person 和 ENTITY2:person 结婚 <pad>x1,3 育有 二女 <pad>x1,3 家庭和睦
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9647507962473124 [Example Ids] [278410, 278398, 278412]
+                [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [278406, 278414, 278398, 278412, 278410]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278410, 278398]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 张
+        [#TRAIN DECISION] 4 [Mean Prob] 0.8939749944674829 [Example Ids] [283124, 283125, 269980, 267253]
+        [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [283125, 269980, 283124, 267253, 266401]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [266401, 283125]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 终于 <pad>x1,3 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8690976769898474 [Example Ids] [179978, 234475, 236575]
+        [#TRAIN MATCH] 4 [Acc] 0.25 [Example Ids] [179978, 236575, 234475, 272735]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272735]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 感情
+        [#TRAIN DECISION] 3 [Mean Prob] 0.965509811638687 [Example Ids] [273852, 249979, 237041]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [283213, 249979, 237041, 273852]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 得
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8812480323636116 [Example Ids] [267261, 267247, 194122]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [267247, 267261, 194122]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 汉奸 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9724670369790966 [Example Ids] [262325, 262329, 262331]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [262331, 262329, 262325]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [262325]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x10, 夫妻
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9782886447384628 [Example Ids] [282794, 276263, 170452]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [286252, 276263, 170452]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+[Child] ==============================
+        [LEVEL] 7
+        [RULE] ENTITY1:person 和 ENTITY2:person 结婚 <pad>x1,3 抱养 <pad>x4,9 天美 <pad>x1,3 家庭
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9853482211776411 [Example Ids] [278408, 227667, 278400]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [227667, 278408, 278400]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [227667]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 与 ENTITY2:person
+[#TRAIN DECISION] 150 [Mean Prob] 0.8864225779237532 [Example Ids] [258323, 275023, 253686, 250026, 284187]
+[#TRAIN MATCH] 844 [Acc] 0.5154028436018957 [Example Ids] [285945, 278914, 258323, 130877, 280889]
+[#DEV MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [286951, 29469, 182815]
+[#TEST MATCH] 320 [Acc] 0.534375 [Example Ids] [159264, 148933, 272428, 285528, 255776]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9696479499344222 [Example Ids] [211692, 283511, 67855, 91769]
+        [#TRAIN MATCH] 63 [Acc] 0.746031746031746 [Example Ids] [285945, 271984, 254160, 269084, 254128]
+        [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+        [#TEST MATCH] 24 [Acc] 0.6666666666666666 [Example Ids] [254138, 181327, 104088, 269084, 271974]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person <pad>x1,3 结婚
+                [#TRAIN DECISION] 4 [Mean Prob] 0.9827516719682643 [Example Ids] [283281, 255678, 255843, 285108]
+                [#TRAIN MATCH] 10 [Acc] 1.0 [Example Ids] [269084, 286951, 269035, 267746, 267421]
+                [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [269084, 269035]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person <pad>x1,3 婚礼
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9850231995540866 [Example Ids] [255638, 259550, 256208]
+                [#TRAIN MATCH] 6 [Acc] 1.0 [Example Ids] [254087, 259550, 259571, 255638, 256208]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [274430]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person 结婚
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9823646612676288 [Example Ids] [285192, 283283, 281421]
+                [#TRAIN MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [281189, 281421, 279292, 285192, 283283]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [279292, 283283, 281421, 35432]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 、 ENTITY1:person 与 ENTITY2:person
+        [#TRAIN DECISION] 8 [Mean Prob] 0.8093290843485162 [Example Ids] [99418, 111034, 131913, 270854, 56489]
+        [#TRAIN MATCH] 25 [Acc] 0.48 [Example Ids] [51797, 277478, 272755, 273859, 256135]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 7 [Acc] 0.14285714285714285 [Example Ids] [195385, 51797, 255537, 39745, 16192]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x4,9 ”
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8787614733518451 [Example Ids] [278902, 126589, 241786]
+        [#TRAIN MATCH] 24 [Acc] 0.5833333333333334 [Example Ids] [151521, 168875, 241786, 259839, 244576]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 9 [Acc] 0.5555555555555556 [Example Ids] [254101, 244576, 255906, 196944, 280673]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person 结婚
+        [#TRAIN DECISION] 8 [Mean Prob] 0.9719363637975107 [Example Ids] [281189, 267289, 283255, 217880, 211812]
+        [#TRAIN MATCH] 23 [Acc] 0.782608695652174 [Example Ids] [279293, 255776, 281189, 262403, 267289]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 13 [Acc] 0.8461538461538461 [Example Ids] [255776, 266583, 281600, 279292, 283283]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person 结婚
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9823646612676288 [Example Ids] [285192, 283283, 281421]
+                [#TRAIN MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [281189, 281421, 279292, 285192, 283283]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [279292, 283283, 281421, 35432]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x4,9 月
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9574758091910899 [Example Ids] [131518, 280370, 262408, 267951]
+        [#TRAIN MATCH] 20 [Acc] 0.6 [Example Ids] [280370, 17046, 254146, 254128, 263105]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [269035, 262408, 131518, 267951]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x1,3 女儿
+        [#TRAIN DECISION] 4 [Mean Prob] 0.8719433155867033 [Example Ids] [276605, 278689, 214475, 198591]
+        [#TRAIN MATCH] 17 [Acc] 0.7647058823529411 [Example Ids] [278689, 267270, 286954, 269988, 283451]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 8 [Acc] 0.625 [Example Ids] [286954, 283511, 283451, 81157, 278689]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x1,3 张
+        [#TRAIN DECISION] 6 [Mean Prob] 0.9630025194412197 [Example Ids] [267308, 255823, 280453, 122035, 271962]
+        [#TRAIN MATCH] 12 [Acc] 0.9166666666666666 [Example Ids] [271962, 280453, 285400, 278877, 255823]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [278939, 266270, 255823, 278867]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x1,3 婚恋
+        [#TRAIN DECISION] 4 [Mean Prob] 0.896125359235403 [Example Ids] [278866, 266243, 272989, 198896]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [272989, 198896, 278866, 266243]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [266243, 278866, 272989]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x1,3 饰
+        [#TRAIN DECISION] 3 [Mean Prob] 0.911463092253371 [Example Ids] [267983, 268110, 268088]
+        [#TRAIN MATCH] 4 [Acc] 0.0 [Example Ids] [267983, 268088, 267951, 268110]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [267951]
+[Child] ==============================
+        [LEVEL] 5
+        [RULE] 堕落 政客 <pad>x1,3 爱情 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 8 [Mean Prob] 0.9910592191685175 [Example Ids] [262401, 262310, 262370, 262345, 262341]
+        [#TRAIN MATCH] 8 [Acc] 1.0 [Example Ids] [262370, 262341, 262346, 262401, 262345]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [262341, 262384, 262370, 262310, 262346]
+[Child] [Child] ==============================
+                [LEVEL] 7
+                [RULE] 堕落 政客 <pad>x1,3 爱情 悲歌 <pad>x1,3 ENTITY1:person 与 ENTITY2:person
+                [#TRAIN DECISION] 8 [Mean Prob] 0.9631031158148607 [Example Ids] [262401, 262345, 262310, 262370, 262351]
+                [#TRAIN MATCH] 8 [Acc] 1.0 [Example Ids] [262370, 262341, 262346, 262401, 262345]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [262341, 262384, 262370, 262310, 262346]
+[Child] ==============================
+        [LEVEL] 8
+        [RULE] 钱王 秘库 <pad>x1,3 七星 <pad>x4,9 ENTITY1:person 与 ENTITY2:person <pad>x1,3 王宝 <pad>x4,9 携
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9874991288297544 [Example Ids] [267103, 267123, 267101]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+[Child] [Child] ==============================
+                [LEVEL] 11
+                [RULE] 钱王 秘库 <pad>x1,3 七星 <pad>x4,9 ENTITY1:person 与 ENTITY2:person 起 <pad>x1,3 王宝 <pad>x1,3 之前 <pad>x1,3 携 <pad>x1,3 三分之一
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9327479771692095 [Example Ids] [267103, 267123, 267101]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 12
+                        [RULE] 钱王 秘库 <pad>x1,3 七星 <pad>x4,9 ENTITY1:person 与 ENTITY2:person 起 出钱 王宝 <pad>x1,3 之前 <pad>x1,3 携 <pad>x1,3 三分之一
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9350098008235562 [Example Ids] [267103, 267123, 267101]
+                        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 、 ENTITY2:person
+[#TRAIN DECISION] 117 [Mean Prob] 0.5715904076493129 [Example Ids] [76213, 270702, 167357, 270654, 270649]
+[#TRAIN MATCH] 2202 [Acc] 0.2829246139872843 [Example Ids] [59760, 273598, 219671, 283449, 145159]
+[#DEV MATCH] 16 [Acc] 0.1875 [Example Ids] [33363, 38869, 174068, 157354, 40039]
+[#TEST MATCH] 839 [Acc] 0.26460071513706795 [Example Ids] [209161, 273167, 267364, 273066, 100442]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person 、
+        [#TRAIN DECISION] 10 [Mean Prob] 0.6524313372032606 [Example Ids] [148079, 95553, 70735, 199706, 280467]
+        [#TRAIN MATCH] 319 [Acc] 0.4200626959247649 [Example Ids] [273598, 38802, 282677, 270517, 199706]
+        [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+        [#TEST MATCH] 118 [Acc] 0.3983050847457627 [Example Ids] [267364, 273054, 268209, 193137, 269327]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] ENTITY1:person 、 ENTITY2:person 、 <pad>x1,3 、
+                [#TRAIN DECISION] 5 [Mean Prob] 0.7649657407478994 [Example Ids] [284745, 165675, 262677, 236632, 282678]
+                [#TRAIN MATCH] 146 [Acc] 0.5958904109589042 [Example Ids] [273598, 282677, 270696, 251330, 278944]
+                [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+                [#TEST MATCH] 56 [Acc] 0.5357142857142857 [Example Ids] [268209, 249292, 267397, 43266, 36989]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 、 ENTITY1:person 、 ENTITY2:person 、
+                [#TRAIN DECISION] 3 [Mean Prob] 0.7675589495228062 [Example Ids] [251203, 257142, 8814]
+                [#TRAIN MATCH] 98 [Acc] 0.5306122448979592 [Example Ids] [273598, 270696, 251330, 278944, 267337]
+                [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+                [#TEST MATCH] 33 [Acc] 0.48484848484848486 [Example Ids] [267364, 193137, 249109, 249292, 267411]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 、 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 17 [Mean Prob] 0.6884259180732029 [Example Ids] [177489, 75429, 70794, 198071, 130784]
+        [#TRAIN MATCH] 278 [Acc] 0.4136690647482014 [Example Ids] [273598, 3707, 270696, 118449, 200925]
+        [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+        [#TEST MATCH] 107 [Acc] 0.411214953271028 [Example Ids] [209161, 267364, 261159, 193137, 222629]
+[Child] [Child] ==============================
+                [LEVEL] 4
+                [RULE] 马锋 <pad>x1,3 笛安 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9837429893266959 [Example Ids] [281552, 281542, 281557]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [281542, 281557, 281552]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [281542, 281552]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 、 <pad>x1,3 、 ENTITY1:person 、 ENTITY2:person
+                [#TRAIN DECISION] 4 [Mean Prob] 0.7805580166069456 [Example Ids] [89125, 284326, 247542, 262593]
+                [#TRAIN MATCH] 100 [Acc] 0.56 [Example Ids] [273598, 251330, 267337, 251205, 285711]
+                [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+                [#TEST MATCH] 34 [Acc] 0.5882352941176471 [Example Ids] [209161, 267364, 261159, 249109, 43266]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 6
+                        [RULE] 、 <pad>x1,3 、 <pad>x1,3 、 ENTITY1:person 、 ENTITY2:person
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.8511732678936056 [Example Ids] [285709, 209161, 224162]
+                        [#TRAIN MATCH] 51 [Acc] 0.5098039215686274 [Example Ids] [281542, 43266, 278904, 259560, 285604]
+                        [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+                        [#TEST MATCH] 19 [Acc] 0.5789473684210527 [Example Ids] [209161, 249109, 43266, 278941, 253224]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 、 ENTITY1:person 、 ENTITY2:person 、
+                [#TRAIN DECISION] 3 [Mean Prob] 0.7675589495228062 [Example Ids] [251203, 257142, 8814]
+                [#TRAIN MATCH] 98 [Acc] 0.5306122448979592 [Example Ids] [273598, 270696, 251330, 278944, 267337]
+                [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267402]
+                [#TEST MATCH] 33 [Acc] 0.48484848484848486 [Example Ids] [267364, 193137, 249109, 249292, 267411]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 与 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 12 [Mean Prob] 0.8490934429717619 [Example Ids] [280901, 261020, 196448, 273155, 165051]
+        [#TRAIN MATCH] 113 [Acc] 0.13274336283185842 [Example Ids] [25219, 135433, 53589, 2157, 86530]
+        [#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [166259]
+        [#TEST MATCH] 41 [Acc] 0.14634146341463414 [Example Ids] [85495, 223446, 12348, 206116, 36989]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person 夫妇
+        [#TRAIN DECISION] 17 [Mean Prob] 0.9696916515771961 [Example Ids] [256108, 273145, 275504, 99746, 263659]
+        [#TRAIN MATCH] 105 [Acc] 0.8666666666666667 [Example Ids] [267262, 280103, 255590, 282795, 273145]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 36 [Acc] 0.8888888888888888 [Example Ids] [273167, 279165, 284351, 256128, 286268]
+[Child] [Child] ==============================
+                [LEVEL] 4
+                [RULE] 代言人 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+                [#TRAIN DECISION] 3 [Mean Prob] 0.989495460767578 [Example Ids] [273590, 258254, 258264]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [258264, 273590, 258254]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [273590]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 5
+                        [RULE] 代言人 <pad>x1,3 ENTITY1:person 、 ENTITY2:person 夫妇
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9768253446614706 [Example Ids] [273590, 258254, 258264]
+                        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [258264, 273590, 258254]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [273590]
+[Child] [Child] ==============================
+                [LEVEL] 4
+                [RULE] 桑兰 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9890552701731169 [Example Ids] [281986, 281981, 281988]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [281986, 281981, 281988]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [281986]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 代言人 <pad>x1,3 ENTITY1:person 、 ENTITY2:person 夫妇
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9768253446614706 [Example Ids] [273590, 258254, 258264]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [258264, 273590, 258254]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [273590]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 导演 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 9 [Mean Prob] 0.7331706713958261 [Example Ids] [87608, 16481, 163179, 9675, 227876]
+        [#TRAIN MATCH] 19 [Acc] 0.21052631578947367 [Example Ids] [280087, 190241, 16481, 87608, 43955]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [16481, 280088, 269989, 227876, 280087]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 与 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8563550622696119 [Example Ids] [266578, 277224, 206909]
+        [#TRAIN MATCH] 17 [Acc] 0.23529411764705882 [Example Ids] [251314, 206909, 221547, 221550, 87817]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 11 [Acc] 0.09090909090909091 [Example Ids] [221547, 206909, 234788, 87817, 48915]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 演员 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 6 [Mean Prob] 0.842830139531544 [Example Ids] [192914, 212627, 13234, 164046, 24262]
+        [#TRAIN MATCH] 16 [Acc] 0.4375 [Example Ids] [282677, 265030, 273723, 13234, 333]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [209369, 265030, 273735, 265047, 282321]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 人物 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.8576362686471204 [Example Ids] [188013, 250881, 274174, 75457]
+        [#TRAIN MATCH] 14 [Acc] 0.5 [Example Ids] [270608, 276496, 104627, 257323, 279249]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 0.2 [Example Ids] [188013, 250881, 75457, 252196, 274174]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person 墓
+        [#TRAIN DECISION] 5 [Mean Prob] 0.6777757508116914 [Example Ids] [251215, 281991, 233487, 251220, 251260]
+        [#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [251171, 251246, 251215, 251220, 280849]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [251220]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 主持人 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.676525550960149 [Example Ids] [76213, 232981, 74496]
+        [#TRAIN MATCH] 6 [Acc] 0.0 [Example Ids] [74496, 215864, 76213, 232981, 257427]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [215871]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 父母 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.6376766182041222 [Example Ids] [279928, 278244, 137277]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [278244, 279928, 137277, 279400]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [278244]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person <pad>x1,3 玻璃
+        [#TRAIN DECISION] 3 [Mean Prob] 0.7763284597609967 [Example Ids] [276895, 276872, 276875]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [276872, 276875, 276895]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [276872]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 后花园 <pad>x1,3 王宫 后花园 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 孙权
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9876604022272216 [Example Ids] [264051, 264189, 264190]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [264190, 264051, 264189, 264174]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [264174]
+[Child] [Child] ==============================
+                [LEVEL] 11
+                [RULE] 王宫 后花园 <pad>x1,3 王宫 后花园 <pad>x1,3 左边 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 练剑习 <pad>x1,3 水榭 <pad>x4,9 孙权 <pad>x4,9 膳房
+                [#TRAIN DECISION] 4 [Mean Prob] 0.9927257083469588 [Example Ids] [264174, 264051, 264189, 264190]
+                [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [264190, 264051, 264189, 264174]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [264174]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 15
+                        [RULE] 王宫 后花园 <pad>x1,3 王宫 后花园 <pad>x1,3 左边 <pad>x1,3 ENTITY1:person 、 ENTITY2:person 练剑习 <pad>x1,3 水榭 <pad>x1,3 底层 <pad>x1,3 孙权 <pad>x1,3 议事厅 、 <pad>x1,3 膳房
+                        [#TRAIN DECISION] 4 [Mean Prob] 0.9470189405020946 [Example Ids] [264051, 264190, 264174, 264189]
+                        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [264190, 264051, 264189, 264174]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [264174]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+[#TRAIN DECISION] 61 [Mean Prob] 0.9841382616389811 [Example Ids] [256128, 285617, 278409, 283444, 251177]
+[#TRAIN MATCH] 128 [Acc] 0.8671875 [Example Ids] [267262, 278922, 255863, 280103, 255590]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [280472]
+[#TEST MATCH] 46 [Acc] 0.8913043478260869 [Example Ids] [273167, 285483, 279165, 284351, 256128]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person 夫妇
+        [#TRAIN DECISION] 17 [Mean Prob] 0.9696916515771961 [Example Ids] [256108, 273145, 275504, 99746, 263659]
+        [#TRAIN MATCH] 105 [Acc] 0.8666666666666667 [Example Ids] [267262, 280103, 255590, 282795, 273145]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 36 [Acc] 0.8888888888888888 [Example Ids] [273167, 279165, 284351, 256128, 286268]
+[Child] [Child] ==============================
+                [LEVEL] 4
+                [RULE] 代言人 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+                [#TRAIN DECISION] 3 [Mean Prob] 0.989495460767578 [Example Ids] [273590, 258254, 258264]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [258264, 273590, 258254]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [273590]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 5
+                        [RULE] 代言人 <pad>x1,3 ENTITY1:person 、 ENTITY2:person 夫妇
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9768253446614706 [Example Ids] [273590, 258254, 258264]
+                        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [258264, 273590, 258254]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [273590]
+[Child] [Child] ==============================
+                [LEVEL] 4
+                [RULE] 桑兰 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9890552701731169 [Example Ids] [281986, 281981, 281988]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [281986, 281981, 281988]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [281986]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 代言人 <pad>x1,3 ENTITY1:person 、 ENTITY2:person 夫妇
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9768253446614706 [Example Ids] [273590, 258254, 258264]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [258264, 273590, 258254]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [273590]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 夫妻 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9937668303816936 [Example Ids] [278864, 256791, 256788]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [256791, 256788, 278864]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [278864, 256791, 256788]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 妻子 ENTITY2:person
+[#TRAIN DECISION] 48 [Mean Prob] 0.9734754189114287 [Example Ids] [269993, 267636, 286955, 267606, 269994]
+[#TRAIN MATCH] 92 [Acc] 0.6847826086956522 [Example Ids] [269979, 239807, 269994, 281583, 255855]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 40 [Acc] 0.675 [Example Ids] [255855, 59480, 177805, 265057, 275211]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 妻子 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9713614474314305 [Example Ids] [286679, 255855, 278230]
+        [#TRAIN MATCH] 19 [Acc] 0.5789473684210527 [Example Ids] [281583, 255855, 282128, 276612, 200836]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 8 [Acc] 0.5 [Example Ids] [255855, 177805, 286679, 282319, 278936]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 妻子 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9712436779950778 [Example Ids] [283581, 284632, 271099]
+        [#TRAIN MATCH] 8 [Acc] 0.5 [Example Ids] [269998, 283581, 284685, 273920, 271099]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [273920, 284685, 284632]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 2016 <pad>x4,9 ENTITY1:person <pad>x1,3 妻子 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9851636715577894 [Example Ids] [280231, 269072, 269087, 283285]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [283285, 269072, 269087, 280231]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283285]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 夫人 ENTITY2:person
+[#TRAIN DECISION] 39 [Mean Prob] 0.9843435135774613 [Example Ids] [255873, 255583, 267618, 256186, 276537]
+[#TRAIN MATCH] 61 [Acc] 0.7704918032786885 [Example Ids] [259975, 255854, 82453, 255860, 256119]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [276537]
+[#TEST MATCH] 23 [Acc] 0.8260869565217391 [Example Ids] [276536, 280419, 266234, 267618, 216410]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 夫人 ENTITY2:person <pad>x1,3 夫人
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9901581371376006 [Example Ids] [256079, 262337, 280071]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [262337, 256079, 280071]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [262337]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 夫人 ENTITY2:person
+[#TRAIN DECISION] 35 [Mean Prob] 0.9832420372090953 [Example Ids] [255807, 280072, 267629, 280075, 175907]
+[#TRAIN MATCH] 84 [Acc] 0.8095238095238095 [Example Ids] [32780, 8145, 267634, 271065, 255610]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [255858]
+[#TEST MATCH] 30 [Acc] 0.8666666666666667 [Example Ids] [267632, 284575, 267612, 267620, 256026]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 携 夫人 ENTITY2:person
+        [#TRAIN DECISION] 6 [Mean Prob] 0.9882446648126672 [Example Ids] [256055, 267634, 255849, 267635, 57957]
+        [#TRAIN MATCH] 10 [Acc] 0.8 [Example Ids] [267634, 283279, 255849, 255608, 256026]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [256026, 283279, 267634]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 民国 <pad>x4,9 ENTITY1:person <pad>x1,3 夫人 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9879987687820644 [Example Ids] [256093, 256035, 255926]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [256093, 255926, 256035, 255807]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [255807]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] 民国 <pad>x4,9 ENTITY1:person 偕 夫人 ENTITY2:person <pad>x1,3 曹娥 <pad>x1,3 瞻拜 孝女
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9932799755701454 [Example Ids] [255807, 256035, 255926]
+                [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [256093, 255926, 256035, 255807]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [255807]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 9
+                        [RULE] 民国 <pad>x4,9 ENTITY1:person 偕 夫人 ENTITY2:person 来 曹娥 <pad>x1,3 瞻拜 孝女
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9735466715707606 [Example Ids] [255807, 256035, 255926]
+                        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [256093, 255926, 256035, 255807]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [255807]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 结婚
+[#TRAIN DECISION] 32 [Mean Prob] 0.9701655332539583 [Example Ids] [267637, 267626, 282626, 272894, 278272]
+[#TRAIN MATCH] 67 [Acc] 0.8208955223880597 [Example Ids] [255647, 279293, 255776, 278942, 269032]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 29 [Acc] 0.8275862068965517 [Example Ids] [255776, 278410, 255757, 8664, 256114]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person 结婚
+        [#TRAIN DECISION] 8 [Mean Prob] 0.9719363637975107 [Example Ids] [281189, 267289, 283255, 217880, 211812]
+        [#TRAIN MATCH] 23 [Acc] 0.782608695652174 [Example Ids] [279293, 255776, 281189, 262403, 267289]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 13 [Acc] 0.8461538461538461 [Example Ids] [255776, 266583, 281600, 279292, 283283]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person 结婚
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9823646612676288 [Example Ids] [285192, 283283, 281421]
+                [#TRAIN MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [281189, 281421, 279292, 285192, 283283]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [279292, 283283, 281421, 35432]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 与 ENTITY2:person 结婚
+        [#TRAIN DECISION] 5 [Mean Prob] 0.9710532304457921 [Example Ids] [251231, 266240, 92212, 149143, 264182]
+        [#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [255647, 269032, 264182, 266240, 92212]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [149143]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 结婚 <pad>x4,9 家庭和睦
+        [#TRAIN DECISION] 5 [Mean Prob] 0.9814683030812791 [Example Ids] [278398, 278410, 278412, 278414, 278406]
+        [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [278406, 278414, 278398, 278412, 278410]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278410, 278398]
+[Child] [Child] ==============================
+                [LEVEL] 6
+                [RULE] ENTITY1:person 和 ENTITY2:person 结婚 <pad>x1,3 二女 <pad>x1,3 家庭和睦
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9875713960870781 [Example Ids] [278398, 278410, 278412]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [278398, 278412, 278410]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278410, 278398]
+[Child] [Child] ==============================
+                [LEVEL] 7
+                [RULE] ENTITY1:person 和 ENTITY2:person 结婚 <pad>x1,3 育有 二女 <pad>x1,3 家庭和睦
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9647507962473124 [Example Ids] [278410, 278398, 278412]
+                [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [278406, 278414, 278398, 278412, 278410]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278410, 278398]
+[Child] ==============================
+        [LEVEL] 5
+        [RULE] ENTITY1:person <pad>x1,3 女友 ENTITY2:person 结婚 <pad>x1,3 杨云
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9839161413890514 [Example Ids] [271444, 272905, 272854]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] 婚纱 <pad>x4,9 体操 <pad>x1,3 ENTITY1:person 与 女友 ENTITY2:person 结婚 <pad>x1,3 杨云
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9882320697756669 [Example Ids] [271444, 272905, 272854]
+                [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 12
+                        [RULE] 婚纱 <pad>x4,9 体操 男子 全能冠军 ENTITY1:person 与 女友 ENTITY2:person 结婚 <pad>x1,3 杨云 <pad>x4,9 婚纱 ”
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9581618025061404 [Example Ids] [271444, 272905, 272854]
+                        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] [Child] [Child] [Child] ==============================
+                                [LEVEL] 13
+                                [RULE] 婚纱 <pad>x1,3 2008 <pad>x1,3 体操 男子 全能冠军 ENTITY1:person 与 女友 ENTITY2:person 结婚 <pad>x1,3 杨云 <pad>x4,9 婚纱 ”
+                                [#TRAIN DECISION] 3 [Mean Prob] 0.9612819279367812 [Example Ids] [271444, 272905, 272854]
+                                [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+                                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] ==============================
+        [LEVEL] 7
+        [RULE] ENTITY1:person 和 ENTITY2:person 结婚 <pad>x1,3 抱养 <pad>x4,9 天美 <pad>x1,3 家庭
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9853482211776411 [Example Ids] [278408, 227667, 278400]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [227667, 278408, 278400]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [227667]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 与 ENTITY2:person
+[#TRAIN DECISION] 30 [Mean Prob] 0.8347233113712241 [Example Ids] [68895, 285213, 126169, 181156, 87465]
+[#TRAIN MATCH] 217 [Acc] 0.2903225806451613 [Example Ids] [64948, 40760, 201379, 176972, 37720]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 83 [Acc] 0.2891566265060241 [Example Ids] [166248, 197714, 273585, 239123, 229273]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 与 ENTITY2:person 结婚
+        [#TRAIN DECISION] 5 [Mean Prob] 0.9710532304457921 [Example Ids] [251231, 266240, 92212, 149143, 264182]
+        [#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [255647, 269032, 264182, 266240, 92212]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [149143]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 之后 <pad>x1,3 ENTITY1:person <pad>x1,3 与 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8786816143840376 [Example Ids] [284185, 215905, 162999]
+        [#TRAIN MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [162999, 215905, 284185]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 妻子 ENTITY2:person
+[#TRAIN DECISION] 25 [Mean Prob] 0.9720001493092733 [Example Ids] [269992, 273087, 276591, 276587, 280238]
+[#TRAIN MATCH] 45 [Acc] 0.7333333333333333 [Example Ids] [270768, 278263, 282846, 252212, 254191]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 22 [Acc] 0.5909090909090909 [Example Ids] [149545, 252204, 276608, 277057, 270768]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 和 ENTITY2:person
+[#TRAIN DECISION] 21 [Mean Prob] 0.9440488511455566 [Example Ids] [254414, 255820, 19227, 264179, 277258]
+[#TRAIN MATCH] 158 [Acc] 0.21518987341772153 [Example Ids] [29138, 26207, 74063, 29328, 94756]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [74253]
+[#TEST MATCH] 74 [Acc] 0.2702702702702703 [Example Ids] [251294, 190768, 244728, 29328, 251180]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 、 ENTITY1:person <pad>x1,3 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8310288488628181 [Example Ids] [133998, 29138, 225324]
+        [#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [29138, 133998, 225324]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [29138, 133998]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 丈夫 ENTITY2:person
+[#TRAIN DECISION] 20 [Mean Prob] 0.9747984408826571 [Example Ids] [282317, 217430, 286936, 283108, 285238]
+[#TRAIN MATCH] 35 [Acc] 0.6857142857142857 [Example Ids] [263685, 286088, 283108, 211230, 280900]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 19 [Acc] 0.6842105263157895 [Example Ids] [66153, 133839, 286088, 280903, 282317]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 丈夫 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9793557019977782 [Example Ids] [283108, 286088, 278666]
+        [#TRAIN MATCH] 8 [Acc] 0.625 [Example Ids] [286088, 283108, 277541, 256799, 278666]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [286088, 283108, 286936]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 与 ENTITY2:person
+[#TRAIN DECISION] 19 [Mean Prob] 0.9422266373288594 [Example Ids] [116834, 273833, 272136, 232396, 256191]
+[#TRAIN MATCH] 251 [Acc] 0.32270916334661354 [Example Ids] [286598, 267758, 52386, 71410, 97379]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [282034]
+[#TEST MATCH] 110 [Acc] 0.3090909090909091 [Example Ids] [267180, 33918, 273182, 57296, 262638]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x1,3 ENTITY1:person <pad>x4,9 与 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9684419575874684 [Example Ids] [28393, 252124, 119707]
+        [#TRAIN MATCH] 7 [Acc] 0.14285714285714285 [Example Ids] [149667, 273095, 119707, 28393, 254115]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [28393]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 夫人 ENTITY2:person
+[#TRAIN DECISION] 17 [Mean Prob] 0.979965219523847 [Example Ids] [276239, 276247, 255905, 281017, 280448]
+[#TRAIN MATCH] 26 [Acc] 0.7307692307692307 [Example Ids] [276239, 266278, 271089, 281017, 267622]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [269978]
+[#TEST MATCH] 9 [Acc] 0.6666666666666666 [Example Ids] [266272, 267622, 276239, 266278, 276550]
+[Child] ==============================
+        [LEVEL] 14
+        [RULE] ENTITY1:person <pad>x1,3 黄元申 <pad>x1,3 目睹 <pad>x1,3 夫人 ENTITY2:person <pad>x1,3 黄杏秀 <pad>x1,3 与 陆小凤 <pad>x1,3 刘松仁 <pad>x1,3 在 一床 <pad>x1,3 便 下决心 <pad>x1,3 凤
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9537326299887576 [Example Ids] [276244, 276254, 276247]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [276239, 276247, 276254, 276244]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [276239, 276254]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 结婚
+[#TRAIN DECISION] 15 [Mean Prob] 0.9748033986598155 [Example Ids] [269035, 269084, 275505, 283281, 255678]
+[#TRAIN MATCH] 42 [Acc] 0.8333333333333334 [Example Ids] [133532, 255851, 284577, 269084, 267735]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+[#TEST MATCH] 14 [Acc] 0.8571428571428571 [Example Ids] [267748, 267735, 269084, 269035, 133532]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 结婚
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9762256276823291 [Example Ids] [67061, 257945, 255851]
+        [#TRAIN MATCH] 17 [Acc] 0.8235294117647058 [Example Ids] [133532, 255851, 267735, 256181, 67061]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 8 [Acc] 0.875 [Example Ids] [267748, 267735, 133532, 267749, 257945]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 注册 结婚 <pad>x1,3 数日 <pad>x1,3 登报 <pad>x1,3 亲友
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9874579299621976 [Example Ids] [267749, 267780, 267740]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267780, 267740, 267749]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267749]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 婚礼
+[#TRAIN DECISION] 14 [Mean Prob] 0.9794948408404315 [Example Ids] [274430, 266617, 255638, 8064, 259550]
+[#TRAIN MATCH] 39 [Acc] 0.7435897435897436 [Example Ids] [258261, 274434, 275221, 8064, 285396]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 12 [Acc] 0.6666666666666666 [Example Ids] [269971, 253783, 274430, 254150, 282586]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 爱情
+[#TRAIN DECISION] 14 [Mean Prob] 0.9727564123443305 [Example Ids] [286650, 273845, 280879, 266231, 252054]
+[#TRAIN MATCH] 31 [Acc] 0.7096774193548387 [Example Ids] [286143, 280879, 224898, 256315, 23420]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.8 [Example Ids] [12587, 250042, 273603, 273845, 280879]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 妻子
+[#TRAIN DECISION] 14 [Mean Prob] 0.9678483765493002 [Example Ids] [284022, 268256, 266605, 280443, 273070]
+[#TRAIN MATCH] 26 [Acc] 0.46153846153846156 [Example Ids] [273855, 179817, 266605, 268253, 283101]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.7 [Example Ids] [284022, 259549, 268253, 272588, 268256]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 妻子 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 14 [Mean Prob] 0.9634213452213716 [Example Ids] [279453, 284328, 55442, 283391, 227669]
+[#TRAIN MATCH] 21 [Acc] 0.38095238095238093 [Example Ids] [279453, 286672, 284328, 274790, 166081]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.0 [Example Ids] [55442, 227669, 286672, 81034, 191238]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 人物 <pad>x1,3 妻子 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9677237047157036 [Example Ids] [227669, 278399, 284024]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [227669, 284024, 278399]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [227669]
+==============================
+[LEVEL] 3
+[RULE] 与 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 13 [Mean Prob] 0.9327364529459251 [Example Ids] [274498, 49470, 196448, 192913, 118285]
+[#TRAIN MATCH] 218 [Acc] 0.16972477064220184 [Example Ids] [25219, 37510, 33183, 135433, 286143]
+[#DEV MATCH] 2 [Acc] 0.0 [Example Ids] [34952, 166259]
+[#TEST MATCH] 84 [Acc] 0.13095238095238096 [Example Ids] [143388, 174183, 211592, 27847, 201865]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 与 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 12 [Mean Prob] 0.8490934429717619 [Example Ids] [280901, 261020, 196448, 273155, 165051]
+        [#TRAIN MATCH] 113 [Acc] 0.13274336283185842 [Example Ids] [25219, 135433, 53589, 2157, 86530]
+        [#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [166259]
+        [#TEST MATCH] 41 [Acc] 0.14634146341463414 [Example Ids] [85495, 223446, 12348, 206116, 36989]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 和 ENTITY2:person
+[#TRAIN DECISION] 13 [Mean Prob] 0.9550150534902025 [Example Ids] [180731, 267095, 268869, 267831, 147975]
+[#TRAIN MATCH] 129 [Acc] 0.34108527131782945 [Example Ids] [122800, 278911, 249921, 212378, 266253]
+[#DEV MATCH] 2 [Acc] 1.0 [Example Ids] [266600, 276890]
+[#TEST MATCH] 52 [Acc] 0.3269230769230769 [Example Ids] [69175, 285705, 122800, 22079, 133414]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 张
+[#TRAIN DECISION] 13 [Mean Prob] 0.9542463604557379 [Example Ids] [146637, 160073, 51425, 14279, 42753]
+[#TRAIN MATCH] 53 [Acc] 0.4339622641509434 [Example Ids] [122644, 283125, 190241, 271962, 99324]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [42592]
+[#TEST MATCH] 18 [Acc] 0.4444444444444444 [Example Ids] [42804, 174080, 278939, 57124, 171104]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x1,3 张
+        [#TRAIN DECISION] 6 [Mean Prob] 0.9630025194412197 [Example Ids] [267308, 255823, 280453, 122035, 271962]
+        [#TRAIN MATCH] 12 [Acc] 0.9166666666666666 [Example Ids] [271962, 280453, 285400, 278877, 255823]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [278939, 266270, 255823, 278867]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 张
+        [#TRAIN DECISION] 4 [Mean Prob] 0.8939749944674829 [Example Ids] [283124, 283125, 269980, 267253]
+        [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [283125, 269980, 283124, 267253, 266401]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [266401, 283125]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 婚礼
+[#TRAIN DECISION] 13 [Mean Prob] 0.9742825291288958 [Example Ids] [265027, 274629, 285607, 274495, 165350]
+[#TRAIN MATCH] 29 [Acc] 0.8275862068965517 [Example Ids] [285945, 267403, 271984, 269999, 267397]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+[#TEST MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [267397, 265027, 285607, 285763, 274495]
+==============================
+[LEVEL] 3
+[RULE] 演员 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 13 [Mean Prob] 0.9284366609292442 [Example Ids] [192914, 282677, 129739, 13234, 281320]
+[#TRAIN MATCH] 37 [Acc] 0.2972972972972973 [Example Ids] [282677, 129739, 269925, 282676, 23477]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 17 [Acc] 0.35294117647058826 [Example Ids] [2210, 54517, 18569, 209369, 281320]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 演员 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 6 [Mean Prob] 0.842830139531544 [Example Ids] [192914, 212627, 13234, 164046, 24262]
+        [#TRAIN MATCH] 16 [Acc] 0.4375 [Example Ids] [282677, 265030, 273723, 13234, 333]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [209369, 265030, 273735, 265047, 282321]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person 结婚
+[#TRAIN DECISION] 12 [Mean Prob] 0.971649368747426 [Example Ids] [273182, 267623, 256167, 283201, 286626]
+[#TRAIN MATCH] 29 [Acc] 0.7931034482758621 [Example Ids] [255688, 261454, 255832, 266221, 126279]
+[#DEV MATCH] 2 [Acc] 0.5 [Example Ids] [133026, 276543]
+[#TEST MATCH] 8 [Acc] 0.75 [Example Ids] [273182, 284173, 267623, 286114, 126279]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 1897 <pad>x10, ENTITY2:person 结婚
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9762324231400048 [Example Ids] [255688, 255655, 255797]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [255688, 255797, 255655]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 结婚
+[#TRAIN DECISION] 12 [Mean Prob] 0.9651410651458633 [Example Ids] [267298, 286142, 255796, 267255, 286086]
+[#TRAIN MATCH] 27 [Acc] 0.5925925925925926 [Example Ids] [260824, 255644, 284174, 278265, 20543]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.7 [Example Ids] [286115, 267298, 278265, 262304, 267255]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 丈夫
+[#TRAIN DECISION] 12 [Mean Prob] 0.9719074796117404 [Example Ids] [280896, 283461, 266581, 272738, 280919]
+[#TRAIN MATCH] 18 [Acc] 0.7222222222222222 [Example Ids] [280912, 266581, 276209, 272738, 278264]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [285964, 272738, 276209, 201887, 257940]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 妻子 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 12 [Mean Prob] 0.9686057089564951 [Example Ids] [274493, 284329, 269627, 282980, 284952]
+[#TRAIN MATCH] 16 [Acc] 0.5625 [Example Ids] [284952, 198735, 282980, 274493, 284329]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [162421, 278455, 124807, 274493, 284952]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, 妻子 ENTITY2:person
+[#TRAIN DECISION] 11 [Mean Prob] 0.9730255609641643 [Example Ids] [283259, 283237, 282680, 284210, 284512]
+[#TRAIN MATCH] 25 [Acc] 0.84 [Example Ids] [272467, 272984, 226615, 283259, 284512]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [272467, 284210, 284020, 275381, 280185]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 夫人
+[#TRAIN DECISION] 11 [Mean Prob] 0.9788941871150793 [Example Ids] [255625, 256017, 267615, 256198, 387]
+[#TRAIN MATCH] 16 [Acc] 0.5625 [Example Ids] [8106, 274152, 279916, 267615, 277368]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [266236, 255757, 274152, 190597, 387]
+==============================
+[LEVEL] 3
+[RULE] 月 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 10 [Mean Prob] 0.9543692488186354 [Example Ids] [254114, 269056, 95710, 58051, 199625]
+[#TRAIN MATCH] 312 [Acc] 0.4935897435897436 [Example Ids] [285945, 134571, 44145, 267262, 37510]
+[#DEV MATCH] 2 [Acc] 1.0 [Example Ids] [286951, 255858]
+[#TEST MATCH] 124 [Acc] 0.5080645161290323 [Example Ids] [267748, 254138, 181327, 222079, 274755]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9696479499344222 [Example Ids] [211692, 283511, 67855, 91769]
+        [#TRAIN MATCH] 63 [Acc] 0.746031746031746 [Example Ids] [285945, 271984, 254160, 269084, 254128]
+        [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+        [#TEST MATCH] 24 [Acc] 0.6666666666666666 [Example Ids] [254138, 181327, 104088, 269084, 271974]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person <pad>x1,3 结婚
+                [#TRAIN DECISION] 4 [Mean Prob] 0.9827516719682643 [Example Ids] [283281, 255678, 255843, 285108]
+                [#TRAIN MATCH] 10 [Acc] 1.0 [Example Ids] [269084, 286951, 269035, 267746, 267421]
+                [#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [269084, 269035]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person <pad>x1,3 婚礼
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9850231995540866 [Example Ids] [255638, 259550, 256208]
+                [#TRAIN MATCH] 6 [Acc] 1.0 [Example Ids] [254087, 259550, 259571, 255638, 256208]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [274430]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 与 ENTITY2:person 结婚
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9823646612676288 [Example Ids] [285192, 283283, 281421]
+                [#TRAIN MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [281189, 281421, 279292, 285192, 283283]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [279292, 283283, 281421, 35432]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9718816833580893 [Example Ids] [272881, 269951, 277975, 271806]
+        [#TRAIN MATCH] 34 [Acc] 0.8529411764705882 [Example Ids] [267389, 8064, 274128, 267735, 269951]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 16 [Acc] 0.875 [Example Ids] [267748, 267735, 255839, 282586, 267416]
+[Child] [Child] ==============================
+                [LEVEL] 5
+                [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 婚礼
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9843057536466753 [Example Ids] [274128, 282586, 279926]
+                [#TRAIN MATCH] 5 [Acc] 0.6 [Example Ids] [8064, 274128, 282586, 266617, 279926]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [282586, 8064, 266617]
+[Child] [Child] ==============================
+                [LEVEL] 6
+                [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 印尼 巴厘岛
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9859399531068614 [Example Ids] [267389, 267406, 267416]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267389, 267416, 267406]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267416, 267406, 267389]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 注册 结婚 <pad>x1,3 数日 <pad>x1,3 登报 <pad>x1,3 亲友
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9874579299621976 [Example Ids] [267749, 267780, 267740]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267780, 267740, 267749]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267749]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 注册 结婚
+        [#TRAIN DECISION] 8 [Mean Prob] 0.9816027505815008 [Example Ids] [267748, 267735, 267771, 267749, 267780]
+        [#TRAIN MATCH] 9 [Acc] 1.0 [Example Ids] [267735, 267780, 254104, 269029, 267771]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [267748, 267735, 254104, 267749]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 注册 结婚 <pad>x1,3 数日 <pad>x1,3 登报 <pad>x1,3 亲友
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9874579299621976 [Example Ids] [267749, 267780, 267740]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267780, 267740, 267749]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267749]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 2016 <pad>x4,9 ENTITY1:person <pad>x1,3 妻子 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9851636715577894 [Example Ids] [280231, 269072, 269087, 283285]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [283285, 269072, 269087, 280231]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283285]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 和
+[#TRAIN DECISION] 10 [Mean Prob] 0.950611221125848 [Example Ids] [287014, 255954, 208121, 276455, 184151]
+[#TRAIN MATCH] 152 [Acc] 0.24342105263157895 [Example Ids] [273191, 219948, 251179, 157693, 86729]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [247432]
+[#TEST MATCH] 73 [Acc] 0.2328767123287671 [Example Ids] [235236, 209112, 251343, 195863, 213194]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 和 <pad>x1,3 结婚
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9695177871085784 [Example Ids] [92510, 254447, 7013]
+        [#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [7013, 92510, 254447]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 饰
+[#TRAIN DECISION] 10 [Mean Prob] 0.828335576905884 [Example Ids] [21117, 79680, 110653, 53602, 99693]
+[#TRAIN MATCH] 51 [Acc] 0.0 [Example Ids] [123740, 146635, 152953, 139144, 49698]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 15 [Acc] 0.0 [Example Ids] [27979, 127417, 36531, 123735, 54016]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ENTITY2:person 夫妇
+[#TRAIN DECISION] 10 [Mean Prob] 0.9852435333150964 [Example Ids] [267304, 267274, 280906, 267257, 278083]
+[#TRAIN MATCH] 26 [Acc] 0.9615384615384616 [Example Ids] [280906, 258318, 273192, 280918, 261301]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.9 [Example Ids] [258287, 280918, 272841, 261303, 263679]
+==============================
+[LEVEL] 3
+[RULE] 主角 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 10 [Mean Prob] 0.9199003312677029 [Example Ids] [213340, 283636, 278327, 282443, 208552]
+[#TRAIN MATCH] 18 [Acc] 0.4444444444444444 [Example Ids] [282248, 278327, 262671, 282245, 213340]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 9 [Acc] 0.5555555555555556 [Example Ids] [284962, 213340, 283636, 278327, 277939]
+[Child] ==============================
+        [LEVEL] 7
+        [RULE] 邂逅 <pad>x1,3 迷雾 围城 <pad>x4,9 夜色 <pad>x1,3 主角 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9857015390706371 [Example Ids] [282240, 282245, 282248]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [282248, 282245, 282240]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [282245, 282240]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 妻子 ENTITY2:person
+[#TRAIN DECISION] 10 [Mean Prob] 0.9770384830970716 [Example Ids] [269985, 280249, 276596, 267283, 276595]
+[#TRAIN MATCH] 18 [Acc] 0.8333333333333334 [Example Ids] [276604, 257317, 276595, 273093, 267283]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 11 [Acc] 0.7272727272727273 [Example Ids] [276604, 275323, 276596, 276525, 280249]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 饰 ENTITY2:person
+[#TRAIN DECISION] 10 [Mean Prob] 0.7435119380516609 [Example Ids] [134978, 132495, 76168, 38255, 161291]
+[#TRAIN MATCH] 17 [Acc] 0.0 [Example Ids] [10959, 146637, 134978, 131887, 24315]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.0 [Example Ids] [24315, 22238, 80577, 25856, 18190]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 之妻
+[#TRAIN DECISION] 10 [Mean Prob] 0.9647255822636913 [Example Ids] [282108, 266244, 156256, 282107, 283414]
+[#TRAIN MATCH] 17 [Acc] 0.47058823529411764 [Example Ids] [272576, 118369, 45362, 60208, 284006]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.16666666666666666 [Example Ids] [284006, 54139, 284010, 118369, 278247]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 妻子
+[#TRAIN DECISION] 10 [Mean Prob] 0.9696574853796784 [Example Ids] [281611, 280877, 280875, 280869, 279258]
+[#TRAIN MATCH] 15 [Acc] 0.6666666666666666 [Example Ids] [274726, 240244, 281611, 280869, 286501]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [272599, 258994, 280875, 281611, 274437]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, 丈夫 ENTITY2:person
+[#TRAIN DECISION] 10 [Mean Prob] 0.9751274163890621 [Example Ids] [174601, 112245, 264094, 286277, 286824]
+[#TRAIN MATCH] 15 [Acc] 0.4 [Example Ids] [278972, 218217, 112245, 263680, 167811]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.2857142857142857 [Example Ids] [201681, 264094, 69732, 284947, 218217]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 夫人
+[#TRAIN DECISION] 10 [Mean Prob] 0.9820863950676021 [Example Ids] [159895, 266260, 271323, 276561, 255727]
+[#TRAIN MATCH] 11 [Acc] 0.2727272727272727 [Example Ids] [271323, 284092, 286645, 123997, 266260]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.25 [Example Ids] [276561, 240844, 159895, 271323]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 之妻
+[#TRAIN DECISION] 9 [Mean Prob] 0.9665548322921708 [Example Ids] [269608, 282360, 278120, 136963, 251184]
+[#TRAIN MATCH] 13 [Acc] 0.38461538461538464 [Example Ids] [278120, 275299, 258893, 128673, 284365]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [278120]
+[#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [128673, 269608, 284365, 251184, 284509]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 和
+[#TRAIN DECISION] 9 [Mean Prob] 0.9279824019893935 [Example Ids] [105100, 3332, 262699, 86109, 29302]
+[#TRAIN MATCH] 74 [Acc] 0.28378378378378377 [Example Ids] [249033, 261517, 285710, 37869, 269983]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 34 [Acc] 0.4411764705882353 [Example Ids] [199968, 74329, 284575, 249033, 266234]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 结婚
+[#TRAIN DECISION] 9 [Mean Prob] 0.9692205039146867 [Example Ids] [267343, 256146, 282715, 253586, 267266]
+[#TRAIN MATCH] 26 [Acc] 0.8076923076923077 [Example Ids] [258290, 7013, 282715, 285528, 254447]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 16 [Acc] 0.875 [Example Ids] [285528, 287078, 253586, 271974, 255839]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 妻子
+[#TRAIN DECISION] 9 [Mean Prob] 0.9676256533994181 [Example Ids] [282356, 281603, 2666, 281395, 95158]
+[#TRAIN MATCH] 20 [Acc] 0.55 [Example Ids] [264635, 275423, 272579, 262355, 284016]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [40951, 282356, 287210, 281216, 281511]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 之妻 ENTITY2:person
+[#TRAIN DECISION] 9 [Mean Prob] 0.9750373337480241 [Example Ids] [262335, 264158, 264129, 282370, 284028]
+[#TRAIN MATCH] 19 [Acc] 0.8947368421052632 [Example Ids] [248859, 276485, 248894, 279455, 273078]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 1.0 [Example Ids] [279455, 282370, 273090, 284028, 262299]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 妻子 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 9 [Mean Prob] 0.9749078512653833 [Example Ids] [88279, 275377, 284084, 280842, 194444]
+[#TRAIN MATCH] 15 [Acc] 0.4666666666666667 [Example Ids] [277044, 284084, 275419, 97429, 194444]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [277044, 88279, 280842, 255793, 267543]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 丈夫 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 9 [Mean Prob] 0.96752862682269 [Example Ids] [284516, 256790, 286196, 275512, 281550]
+[#TRAIN MATCH] 15 [Acc] 0.6 [Example Ids] [120466, 284516, 281127, 265245, 286693]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [267473, 120466, 278267, 278243, 275512]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 丈夫
+[#TRAIN DECISION] 9 [Mean Prob] 0.9727904647831449 [Example Ids] [272758, 86627, 284944, 274435, 270739]
+[#TRAIN MATCH] 15 [Acc] 0.6 [Example Ids] [258940, 283061, 274435, 278280, 283585]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.5714285714285714 [Example Ids] [223691, 274435, 283585, 272758, 223696]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person 、 <pad>x1,3 、 ENTITY2:person
+[#TRAIN DECISION] 9 [Mean Prob] 0.7105209831258571 [Example Ids] [259176, 149988, 144561, 259559, 149986]
+[#TRAIN MATCH] 162 [Acc] 0.20987654320987653 [Example Ids] [258259, 8083, 249033, 234103, 61290]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 64 [Acc] 0.234375 [Example Ids] [211592, 270755, 148265, 246367, 110529]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 同桌 <pad>x4,9 演员 <pad>x1,3 赵本山 <pad>x1,3 ENTITY1:person <pad>x1,3 沈阳 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9886067141893893 [Example Ids] [268218, 268228, 268212, 268254]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [268254, 268212, 268228, 268218]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [268254, 268228]
+[Child] [Child] ==============================
+                [LEVEL] 9
+                [RULE] 同桌 <pad>x1,3 你 <pad>x1,3 演员 <pad>x1,3 赵本山 、 ENTITY1:person 、 <pad>x1,3 、 ENTITY2:person
+                [#TRAIN DECISION] 3 [Mean Prob] 0.945385935002649 [Example Ids] [268212, 268218, 268228]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [268212, 268228, 268218]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [268228]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 10
+                        [RULE] 同桌 <pad>x1,3 你 <pad>x1,3 演员 <pad>x1,3 赵本山 、 ENTITY1:person 、 <pad>x1,3 沈阳 、 ENTITY2:person
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9509409367605013 [Example Ids] [268212, 268218, 268228]
+                        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [268212, 268228, 268218]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [268228]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 与 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 8 [Mean Prob] 0.818592288434865 [Example Ids] [115996, 33233, 114175, 101138, 269831]
+[#TRAIN MATCH] 177 [Acc] 0.4519774011299435 [Example Ids] [285825, 283421, 284302, 274864, 279907]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [267770]
+[#TEST MATCH] 65 [Acc] 0.4461538461538462 [Example Ids] [255855, 274372, 177805, 241927, 274531]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 妻子 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9713614474314305 [Example Ids] [286679, 255855, 278230]
+        [#TRAIN MATCH] 19 [Acc] 0.5789473684210527 [Example Ids] [281583, 255855, 282128, 276612, 200836]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 8 [Acc] 0.5 [Example Ids] [255855, 177805, 286679, 282319, 278936]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 丈夫 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9793557019977782 [Example Ids] [283108, 286088, 278666]
+        [#TRAIN MATCH] 8 [Acc] 0.625 [Example Ids] [286088, 283108, 277541, 256799, 278666]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [286088, 283108, 286936]
+[Child] ==============================
+        [LEVEL] 5
+        [RULE] 月 <pad>x1,3 ENTITY1:person 与 <pad>x1,3 ENTITY2:person 结婚
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9817605565693301 [Example Ids] [286115, 23760, 283980]
+        [#TRAIN MATCH] 5 [Acc] 0.8 [Example Ids] [283980, 286115, 23760, 283275, 282772]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [286115, 283980]
+[Child] ==============================
+        [LEVEL] 5
+        [RULE] ENTITY1:person <pad>x1,3 女友 ENTITY2:person 结婚 <pad>x1,3 杨云
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9839161413890514 [Example Ids] [271444, 272905, 272854]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] 婚纱 <pad>x4,9 体操 <pad>x1,3 ENTITY1:person 与 女友 ENTITY2:person 结婚 <pad>x1,3 杨云
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9882320697756669 [Example Ids] [271444, 272905, 272854]
+                [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 12
+                        [RULE] 婚纱 <pad>x4,9 体操 男子 全能冠军 ENTITY1:person 与 女友 ENTITY2:person 结婚 <pad>x1,3 杨云 <pad>x4,9 婚纱 ”
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9581618025061404 [Example Ids] [271444, 272905, 272854]
+                        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+[Child] [Child] [Child] [Child] ==============================
+                                [LEVEL] 13
+                                [RULE] 婚纱 <pad>x1,3 2008 <pad>x1,3 体操 男子 全能冠军 ENTITY1:person 与 女友 ENTITY2:person 结婚 <pad>x1,3 杨云 <pad>x4,9 婚纱 ”
+                                [#TRAIN DECISION] 3 [Mean Prob] 0.9612819279367812 [Example Ids] [271444, 272905, 272854]
+                                [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272905, 271444, 272854]
+                                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [272854]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 夫人
+[#TRAIN DECISION] 8 [Mean Prob] 0.9772781591528588 [Example Ids] [286269, 278446, 267610, 274476, 284211]
+[#TRAIN MATCH] 17 [Acc] 0.7647058823529411 [Example Ids] [283445, 255955, 267610, 278446, 38619]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [124787]
+[#TEST MATCH] 5 [Acc] 0.8 [Example Ids] [38619, 255955, 256147, 267610, 255924]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 张
+[#TRAIN DECISION] 8 [Mean Prob] 0.9534649546148861 [Example Ids] [269946, 263627, 271055, 276887, 283284]
+[#TRAIN MATCH] 27 [Acc] 0.37037037037037035 [Example Ids] [235029, 263627, 44696, 278919, 267665]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.3 [Example Ids] [265269, 124085, 259609, 271055, 287018]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 周芷若
+[#TRAIN DECISION] 8 [Mean Prob] 0.9841511896825753 [Example Ids] [249862, 249964, 250051, 250009, 250028]
+[#TRAIN MATCH] 27 [Acc] 1.0 [Example Ids] [250004, 250051, 250040, 249873, 249880]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 12 [Acc] 1.0 [Example Ids] [250040, 249981, 249954, 249975, 249873]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ； ENTITY2:person
+[#TRAIN DECISION] 8 [Mean Prob] 0.5494426510599455 [Example Ids] [29078, 16227, 106995, 103859, 138214]
+[#TRAIN MATCH] 17 [Acc] 0.11764705882352941 [Example Ids] [61464, 113734, 103859, 16227, 280099]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.2857142857142857 [Example Ids] [285703, 16227, 280099, 61466, 106995]
+==============================
+[LEVEL] 3
+[RULE] 妻子 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 8 [Mean Prob] 0.9698753646741263 [Example Ids] [278657, 30045, 284624, 281579, 175951]
+[#TRAIN MATCH] 9 [Acc] 0.1111111111111111 [Example Ids] [274313, 281579, 175951, 105923, 5699]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.0 [Example Ids] [9368, 105923, 175951, 274313]
+==============================
+[LEVEL] 3
+[RULE] 月 <pad>x1,3 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 7 [Mean Prob] 0.9621609185600306 [Example Ids] [45774, 236069, 269098, 72558, 89757]
+[#TRAIN MATCH] 132 [Acc] 0.2878787878787879 [Example Ids] [285825, 176972, 260824, 14631, 180889]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [262411]
+[#TEST MATCH] 49 [Acc] 0.2653061224489796 [Example Ids] [134850, 196613, 274531, 285106, 174516]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 夫人
+[#TRAIN DECISION] 7 [Mean Prob] 0.9778952251704626 [Example Ids] [256046, 274229, 193501, 277408, 186823]
+[#TRAIN MATCH] 19 [Acc] 0.5263157894736842 [Example Ids] [186823, 252316, 277408, 255859, 256044]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [251283]
+[#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [274229, 255251, 264074, 256046]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 老公 ENTITY2:person
+[#TRAIN DECISION] 7 [Mean Prob] 0.9832998170762118 [Example Ids] [278275, 278285, 275177, 278286, 278273]
+[#TRAIN MATCH] 11 [Acc] 0.8181818181818182 [Example Ids] [278275, 278273, 279156, 261310, 261293]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [279156, 261293, 278894, 278286, 278273]
+==============================
+[LEVEL] 3
+[RULE] 、 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.6504649081020077 [Example Ids] [255880, 72752, 104367, 53074, 183099]
+[#TRAIN MATCH] 167 [Acc] 0.2215568862275449 [Example Ids] [151150, 197348, 29138, 95032, 104367]
+[#DEV MATCH] 2 [Acc] 0.0 [Example Ids] [157344, 213031]
+[#TEST MATCH] 57 [Acc] 0.19298245614035087 [Example Ids] [71300, 195385, 189642, 242449, 51797]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 、 ENTITY1:person 与 ENTITY2:person
+        [#TRAIN DECISION] 8 [Mean Prob] 0.8093290843485162 [Example Ids] [99418, 111034, 131913, 270854, 56489]
+        [#TRAIN MATCH] 25 [Acc] 0.48 [Example Ids] [51797, 277478, 272755, 273859, 256135]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 7 [Acc] 0.14285714285714285 [Example Ids] [195385, 51797, 255537, 39745, 16192]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 、 ENTITY1:person 演员 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8518606696678054 [Example Ids] [154359, 160074, 154364]
+        [#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [154364, 154359, 160074]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [154359]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, 和 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.9663087399922637 [Example Ids] [93106, 1309, 271034, 45942, 82038]
+[#TRAIN MATCH] 80 [Acc] 0.4375 [Example Ids] [163599, 121846, 254088, 256283, 107228]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [165135]
+[#TEST MATCH] 29 [Acc] 0.27586206896551724 [Example Ids] [62445, 272733, 166794, 163599, 272843]
+[Child] ==============================
+        [LEVEL] 8
+        [RULE] ENTITY1:person <pad>x1,3 胡静 <pad>x1,3 婚礼 <pad>x1,3 婚礼 <pad>x1,3 胡静 <pad>x1,3 ENTITY2:person 大婚 <pad>x10, 吉隆坡
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9930812270721082 [Example Ids] [261313, 261318, 261297]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [261313, 261297, 261318]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 结婚
+[#TRAIN DECISION] 6 [Mean Prob] 0.9719149374826731 [Example Ids] [271987, 281193, 285708, 36528, 92510]
+[#TRAIN MATCH] 22 [Acc] 0.6363636363636364 [Example Ids] [267764, 285710, 67135, 281193, 254087]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 8 [Acc] 0.625 [Example Ids] [261293, 254099, 67135, 63654, 285710]
+==============================
+[LEVEL] 3
+[RULE] 2014 <pad>x4,9 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.9653746114596657 [Example Ids] [278940, 273420, 278092, 253538, 252096]
+[#TRAIN MATCH] 20 [Acc] 0.5 [Example Ids] [278940, 2455, 282587, 124224, 278092]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [2455, 286115, 273574, 285765, 124224]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 孙中山 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.9818565318675443 [Example Ids] [251294, 251174, 251272, 251319, 251263]
+[#TRAIN MATCH] 14 [Acc] 1.0 [Example Ids] [251270, 251180, 251263, 251174, 251340]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 8 [Acc] 1.0 [Example Ids] [251294, 251180, 251263, 251222, 251270]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 张学良
+[#TRAIN DECISION] 6 [Mean Prob] 0.9817487967807165 [Example Ids] [255824, 255861, 256063, 256162, 255826]
+[#TRAIN MATCH] 12 [Acc] 1.0 [Example Ids] [255896, 256162, 256063, 255824, 256027]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [255896, 255861, 256162, 256105, 256063]
+==============================
+[LEVEL] 3
+[RULE] 导演 <pad>x1,3 ENTITY1:person ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.7302301859191012 [Example Ids] [148082, 247727, 36675, 178254, 58704]
+[#TRAIN MATCH] 11 [Acc] 0.09090909090909091 [Example Ids] [60411, 58704, 166721, 166728, 178254]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.2 [Example Ids] [91632, 280102, 60411, 178254, 36675]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 丈夫
+[#TRAIN DECISION] 6 [Mean Prob] 0.972990044466369 [Example Ids] [285212, 280917, 224759, 286010, 285605]
+[#TRAIN MATCH] 10 [Acc] 0.7 [Example Ids] [275438, 224759, 279602, 269630, 286010]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [285212, 224759, 212553, 285605]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 妻子 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.9698114154480987 [Example Ids] [276267, 269614, 256804, 278792, 287331]
+[#TRAIN MATCH] 9 [Acc] 0.6666666666666666 [Example Ids] [268240, 269614, 284135, 278792, 124081]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [284135, 124081]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 夫人 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.9807113303858216 [Example Ids] [267617, 277306, 255671, 284440, 272955]
+[#TRAIN MATCH] 7 [Acc] 0.8571428571428571 [Example Ids] [275374, 272955, 284440, 277306, 267617]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [255671, 277306]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 夫人 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 6 [Mean Prob] 0.9802997451290628 [Example Ids] [267102, 276534, 5429, 42055, 280078]
+[#TRAIN MATCH] 6 [Acc] 0.5 [Example Ids] [276534, 42055, 280078, 262000, 5429]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267102]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person ENTITY2:person の 姐弟恋
+[#TRAIN DECISION] 6 [Mean Prob] 0.7995016010573717 [Example Ids] [281195, 279442, 286573, 287246, 287019]
+[#TRAIN MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [271968, 286573, 287246, 287019, 279442]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [287019, 271968]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 、 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.5930323830654928 [Example Ids] [117456, 38591, 96356, 21972, 8042]
+[#TRAIN MATCH] 200 [Acc] 0.095 [Example Ids] [254844, 276906, 196096, 159156, 191685]
+[#DEV MATCH] 3 [Acc] 0.0 [Example Ids] [60281, 21972, 141154]
+[#TEST MATCH] 77 [Acc] 0.1038961038961039 [Example Ids] [174610, 201865, 194497, 150886, 147052]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 与 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9579902311379499 [Example Ids] [132230, 278092, 253538, 176819, 251784]
+[#TRAIN MATCH] 79 [Acc] 0.4050632911392405 [Example Ids] [267387, 271153, 257957, 261295, 266754]
+[#DEV MATCH] 2 [Acc] 1.0 [Example Ids] [270840, 276543]
+[#TEST MATCH] 31 [Acc] 0.3548387096774194 [Example Ids] [46604, 284918, 235171, 276608, 266754]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 与
+[#TRAIN DECISION] 5 [Mean Prob] 0.9628654272399952 [Example Ids] [46533, 143565, 114063, 269530, 177707]
+[#TRAIN MATCH] 88 [Acc] 0.20454545454545456 [Example Ids] [255487, 14831, 161364, 136312, 186823]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [69159]
+[#TEST MATCH] 35 [Acc] 0.2571428571428571 [Example Ids] [133839, 237024, 98796, 82097, 120465]
+==============================
+[LEVEL] 3
+[RULE] 和 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9507739675546796 [Example Ids] [264063, 270708, 159463, 281220, 168061]
+[#TRAIN MATCH] 54 [Acc] 0.2222222222222222 [Example Ids] [245730, 16797, 224180, 255846, 251274]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [245730]
+[#TEST MATCH] 20 [Acc] 0.2 [Example Ids] [38640, 281220, 151485, 278328, 26439]
+==============================
+[LEVEL] 3
+[RULE] 2014 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9673375484456637 [Example Ids] [285948, 285946, 226624, 278914, 278909]
+[#TRAIN MATCH] 29 [Acc] 0.7241379310344828 [Example Ids] [285945, 278914, 282769, 226624, 214749]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+[#TEST MATCH] 8 [Acc] 0.625 [Example Ids] [214749, 267620, 282585, 209369, 267250]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 丈夫 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9743000070765113 [Example Ids] [273607, 216158, 259598, 283111, 27377]
+[#TRAIN MATCH] 12 [Acc] 0.6666666666666666 [Example Ids] [282316, 27377, 285609, 283111, 284684]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [278395]
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [285609, 273574, 216158, 273607]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 和
+[#TRAIN DECISION] 5 [Mean Prob] 0.9495158178765264 [Example Ids] [188587, 112103, 176945, 273158, 104305]
+[#TRAIN MATCH] 98 [Acc] 0.19387755102040816 [Example Ids] [15618, 269979, 15971, 256085, 284092]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 34 [Acc] 0.23529411764705882 [Example Ids] [100442, 273054, 229914, 197006, 176543]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 爱
+[#TRAIN DECISION] 5 [Mean Prob] 0.9430490228718658 [Example Ids] [68900, 269739, 152923, 215804, 154063]
+[#TRAIN MATCH] 17 [Acc] 0.47058823529411764 [Example Ids] [274749, 146941, 154063, 68900, 276888]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [276888, 146941, 286597, 215804, 154063]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 爱情
+[#TRAIN DECISION] 5 [Mean Prob] 0.9695371758500814 [Example Ids] [278670, 40893, 284627, 242151, 40891]
+[#TRAIN MATCH] 16 [Acc] 0.6875 [Example Ids] [254122, 267747, 252210, 281709, 276897]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [276897, 286597, 40893, 281709]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, CSSCI
+[#TRAIN DECISION] 5 [Mean Prob] 0.9703024639996458 [Example Ids] [281176, 79978, 281178, 281173, 281174]
+[#TRAIN MATCH] 16 [Acc] 0.3125 [Example Ids] [226599, 281178, 95663, 226597, 110605]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.2 [Example Ids] [281174, 226597, 223512, 281178, 226599]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 爱情
+[#TRAIN DECISION] 5 [Mean Prob] 0.9699802214809073 [Example Ids] [267383, 274473, 159639, 267386, 223382]
+[#TRAIN MATCH] 14 [Acc] 0.5714285714285714 [Example Ids] [258288, 267351, 274473, 159639, 205553]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.5714285714285714 [Example Ids] [274473, 269947, 170887, 159639, 273841]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 墓
+[#TRAIN DECISION] 5 [Mean Prob] 0.8767131550008683 [Example Ids] [251215, 281991, 233487, 251260, 251220]
+[#TRAIN MATCH] 13 [Acc] 0.6923076923076923 [Example Ids] [251302, 251238, 251171, 251246, 104335]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [251220, 104335]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person 墓
+        [#TRAIN DECISION] 5 [Mean Prob] 0.6777757508116914 [Example Ids] [251215, 281991, 233487, 251220, 251260]
+        [#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [251171, 251246, 251215, 251220, 280849]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [251220]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 求婚
+[#TRAIN DECISION] 5 [Mean Prob] 0.9730345510356859 [Example Ids] [284631, 285573, 256089, 104799, 108307]
+[#TRAIN MATCH] 12 [Acc] 0.5833333333333334 [Example Ids] [142362, 273151, 104799, 256089, 285573]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [286950, 273170, 285573, 256089, 142362]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 爱情故事
+[#TRAIN DECISION] 5 [Mean Prob] 0.9776547211504196 [Example Ids] [281393, 280412, 264031, 256278, 286512]
+[#TRAIN MATCH] 11 [Acc] 0.7272727272727273 [Example Ids] [281393, 252207, 267747, 264031, 282982]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [281393, 282982, 256278]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 老公 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9806293700717481 [Example Ids] [282037, 281197, 184730, 279908, 280979]
+[#TRAIN MATCH] 11 [Acc] 0.7272727272727273 [Example Ids] [279154, 261300, 184730, 280979, 282037]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [261300, 280979, 261321, 273566]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ENTITY2:person <pad>x4,9 张
+[#TRAIN DECISION] 5 [Mean Prob] 0.9440944766490924 [Example Ids] [267317, 267244, 91778, 66386, 216119]
+[#TRAIN MATCH] 11 [Acc] 0.2727272727272727 [Example Ids] [66386, 231611, 267305, 148654, 267317]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 8 [Acc] 0.25 [Example Ids] [216119, 66386, 11916, 267244, 21304]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 母 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9601337848717373 [Example Ids] [281977, 281976, 21109, 280495, 129227]
+[#TRAIN MATCH] 10 [Acc] 0.6 [Example Ids] [21109, 267438, 281977, 281972, 129227]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [283418, 281975, 280495, 281976]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 老婆 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9771565451610416 [Example Ids] [280243, 280233, 257348, 267353, 279289]
+[#TRAIN MATCH] 9 [Acc] 0.8888888888888888 [Example Ids] [173611, 262307, 280233, 279289, 257348]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [280243, 262307, 173611]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 伉俪
+[#TRAIN DECISION] 5 [Mean Prob] 0.9776328348321132 [Example Ids] [283463, 759, 2476, 100650, 20766]
+[#TRAIN MATCH] 9 [Acc] 0.4444444444444444 [Example Ids] [100650, 759, 100646, 251343, 273168]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [251343, 20766, 100646, 273168]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 夫人
+[#TRAIN DECISION] 5 [Mean Prob] 0.9786987574696905 [Example Ids] [267776, 266237, 39240, 283770, 67763]
+[#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [251230, 267776, 283770, 251262, 67763]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [283770, 251325, 251230, 39240]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 1878 <pad>x4,9 ENTITY2:person 夫人
+        [#TRAIN DECISION] 3 [Mean Prob] 0.978300657382217 [Example Ids] [251230, 251262, 251325]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [251230, 251262, 251325]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [251325, 251230]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 沈阳
+[#TRAIN DECISION] 5 [Mean Prob] 0.9606571964878408 [Example Ids] [268209, 268214, 261604, 261656, 261584]
+[#TRAIN MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [268209, 261656, 261604, 192335, 261584]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [268209, 261604]
+==============================
+[LEVEL] 3
+[RULE] 丈夫 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9753078323456318 [Example Ids] [280893, 269615, 23382, 55111, 244064]
+[#TRAIN MATCH] 7 [Acc] 0.5714285714285714 [Example Ids] [280893, 55111, 23382, 269615, 251178]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [55111, 23382, 285076]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 之妻 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.96589812090743 [Example Ids] [261315, 261312, 282627, 119038, 284325]
+[#TRAIN MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [282627, 284325, 119038, 262321, 261312]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [282627]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 生命 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9675535985205336 [Example Ids] [15296, 276279, 129232, 152912, 193306]
+[#TRAIN MATCH] 6 [Acc] 0.16666666666666666 [Example Ids] [193306, 15296, 17275, 129232, 152912]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [193306, 152912]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 妻 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9814294291102185 [Example Ids] [272583, 272578, 248855, 257303, 155486]
+[#TRAIN MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [155486, 257303, 272578, 248855, 272583]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [155486, 272578, 257303, 272583]
+==============================
+[LEVEL] 3
+[RULE] 神雕侠侣 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 5 [Mean Prob] 0.9775137171588139 [Example Ids] [265050, 265039, 273751, 276653, 265031]
+[#TRAIN MATCH] 5 [Acc] 0.8 [Example Ids] [276653, 265050, 265031, 265039, 273751]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [265050]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person <pad>x1,3 岁 <pad>x1,3 ENTITY2:person <pad>x1,3 岁
+[#TRAIN DECISION] 5 [Mean Prob] 0.9562172217021754 [Example Ids] [277032, 273175, 165015, 198914, 282933]
+[#TRAIN MATCH] 9 [Acc] 0.4444444444444444 [Example Ids] [273175, 198914, 272966, 272832, 237487]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [272966, 165015, 237487, 277032, 282933]
+==============================
+[LEVEL] 4
+[RULE] 侍剑 <pad>x10, ENTITY1:person ENTITY2:person 夫妻
+[#TRAIN DECISION] 5 [Mean Prob] 0.9868477847734616 [Example Ids] [269678, 269680, 269681, 275606, 269654]
+[#TRAIN MATCH] 9 [Acc] 0.8888888888888888 [Example Ids] [269678, 269654, 269680, 269668, 269670]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [269681, 269666, 269670, 269668, 269678]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 和
+[#TRAIN DECISION] 4 [Mean Prob] 0.9567518043941334 [Example Ids] [25127, 258153, 110882, 133879]
+[#TRAIN MATCH] 61 [Acc] 0.18032786885245902 [Example Ids] [202972, 267734, 212892, 180889, 266596]
+[#DEV MATCH] 3 [Acc] 0.0 [Example Ids] [23021, 5051, 266108]
+[#TEST MATCH] 21 [Acc] 0.19047619047619047 [Example Ids] [250251, 256006, 237482, 266596, 8741]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 和 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9330657025161687 [Example Ids] [170451, 139841, 59365, 255069]
+[#TRAIN MATCH] 143 [Acc] 0.34965034965034963 [Example Ids] [173611, 170451, 270468, 256155, 224586]
+[#DEV MATCH] 2 [Acc] 0.0 [Example Ids] [109199, 191347]
+[#TEST MATCH] 54 [Acc] 0.2777777777777778 [Example Ids] [93336, 126875, 250977, 133839, 218531]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 妻子 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9712436779950778 [Example Ids] [283581, 284632, 271099]
+        [#TRAIN MATCH] 8 [Acc] 0.5 [Example Ids] [269998, 283581, 284685, 273920, 271099]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [273920, 284685, 284632]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 和 <pad>x1,3 双生 <pad>x1,3 ENTITY1:person 和 移花宫 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9859734513656121 [Example Ids] [271008, 259922, 271026, 271015]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [271015, 271026, 271008, 259922]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [271026]
+[Child] [Child] ==============================
+                [LEVEL] 7
+                [RULE] 小鱼儿 和 <pad>x1,3 双生 <pad>x1,3 ENTITY1:person 和 移花宫 <pad>x1,3 ENTITY2:person
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9191501215013819 [Example Ids] [259922, 271026, 271015]
+                [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [271015, 271026, 271008, 259922]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [271026]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 与
+[#TRAIN DECISION] 4 [Mean Prob] 0.9595747961761307 [Example Ids] [75497, 57802, 36458, 255786]
+[#TRAIN MATCH] 58 [Acc] 0.3103448275862069 [Example Ids] [238027, 73250, 166216, 38300, 118832]
+[#DEV MATCH] 2 [Acc] 0.5 [Example Ids] [75497, 276890]
+[#TEST MATCH] 22 [Acc] 0.4090909090909091 [Example Ids] [167271, 40258, 198974, 251258, 88154]
+[Child] ==============================
+        [LEVEL] 14
+        [RULE] ENTITY1:person <pad>x1,3 黄元申 <pad>x1,3 目睹 <pad>x1,3 夫人 ENTITY2:person <pad>x1,3 黄杏秀 <pad>x1,3 与 陆小凤 <pad>x1,3 刘松仁 <pad>x1,3 在 一床 <pad>x1,3 便 下决心 <pad>x1,3 凤
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9537326299887576 [Example Ids] [276244, 276254, 276247]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [276239, 276247, 276254, 276244]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [276239, 276254]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 与
+[#TRAIN DECISION] 4 [Mean Prob] 0.9446561669893312 [Example Ids] [178644, 265335, 123925, 204958]
+[#TRAIN MATCH] 213 [Acc] 0.13615023474178403 [Example Ids] [118449, 119384, 276906, 266255, 260233]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [3132]
+[#TEST MATCH] 76 [Acc] 0.10526315789473684 [Example Ids] [274981, 89512, 203456, 123840, 119384]
+==============================
+[LEVEL] 3
+[RULE] 与 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.835372461340177 [Example Ids] [269282, 159017, 52245, 156962]
+[#TRAIN MATCH] 77 [Acc] 0.16883116883116883 [Example Ids] [273857, 253633, 189971, 272550, 168218]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [195281]
+[#TEST MATCH] 38 [Acc] 0.21052631578947367 [Example Ids] [275441, 269282, 249704, 197910, 267273]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 与
+[#TRAIN DECISION] 4 [Mean Prob] 0.9403339321493875 [Example Ids] [245738, 272548, 56525, 271876]
+[#TRAIN MATCH] 44 [Acc] 0.25 [Example Ids] [251112, 147251, 60048, 90341, 75492]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [233439]
+[#TEST MATCH] 23 [Acc] 0.21739130434782608 [Example Ids] [245738, 151485, 249954, 105394, 263540]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 也 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.7561384888395133 [Example Ids] [41077, 142950, 254119, 2521]
+[#TRAIN MATCH] 38 [Acc] 0.18421052631578946 [Example Ids] [152908, 69636, 65239, 86411, 2521]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [20391]
+[#TEST MATCH] 16 [Acc] 0.1875 [Example Ids] [270763, 108781, 96623, 239142, 141675]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 夫人
+[#TRAIN DECISION] 4 [Mean Prob] 0.9765701608495121 [Example Ids] [265182, 267994, 266108, 170329]
+[#TRAIN MATCH] 9 [Acc] 0.3333333333333333 [Example Ids] [255716, 226976, 267994, 255900, 284675]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [266108]
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [255716]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 夫妇
+[#TRAIN DECISION] 4 [Mean Prob] 0.9821244166606656 [Example Ids] [256184, 182333, 252262, 61072]
+[#TRAIN MATCH] 9 [Acc] 0.7777777777777778 [Example Ids] [182333, 252262, 256184, 272095, 272146]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [182333]
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [272146, 255975]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 饰 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.7575503404580001 [Example Ids] [264228, 238215, 275436, 250263]
+[#TRAIN MATCH] 38 [Acc] 0.7105263157894737 [Example Ids] [275436, 250004, 273091, 264156, 250051]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 15 [Acc] 0.6 [Example Ids] [274531, 267996, 250040, 249981, 260150]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 饰 ENTITY1:person <pad>x1,3 饰 ENTITY2:person
+        [#TRAIN DECISION] 5 [Mean Prob] 0.89566771557788 [Example Ids] [267996, 273092, 279463, 273091, 280187]
+        [#TRAIN MATCH] 30 [Acc] 0.8666666666666667 [Example Ids] [250004, 273091, 264156, 250051, 250040]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 12 [Acc] 0.75 [Example Ids] [267996, 250040, 249981, 260150, 249873]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] 制片方 <pad>x4,9 导演 <pad>x4,9 饰 ENTITY1:person <pad>x1,3 饰 ENTITY2:person <pad>x1,3 饰 周芷若
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9593890034154144 [Example Ids] [249862, 250023, 249928]
+                [#TRAIN MATCH] 8 [Acc] 1.0 [Example Ids] [249880, 250023, 249982, 249981, 250009]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [249981, 249982, 250023]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 妻 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9853191728379258 [Example Ids] [252239, 248898, 248891, 277534]
+[#TRAIN MATCH] 33 [Acc] 0.9696969696969697 [Example Ids] [252186, 248854, 252238, 248890, 248899]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 13 [Acc] 0.9230769230769231 [Example Ids] [248898, 248897, 248860, 257338, 257333]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 妻 ENTITY2:person 答诗
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9923799227663747 [Example Ids] [252238, 252186, 252241]
+        [#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [252186, 252238, 252258, 252241]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [252238, 252241, 252186]
+[Child] ==============================
+        [LEVEL] 7
+        [RULE] ENTITY1:person 妻 ENTITY2:person <pad>x4,9 尤老娘 <pad>x4,9 尤老娘 改嫁 <pad>x1,3 随来
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9929624902897004 [Example Ids] [257356, 257341, 257359]
+        [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [257341, 257344, 257359, 257334, 257356]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [257334, 257356]
+[Child] [Child] ==============================
+                [LEVEL] 8
+                [RULE] ENTITY1:person 妻 ENTITY2:person <pad>x4,9 尤老娘 <pad>x4,9 尤老娘 改嫁 尤家时 随来
+                [#TRAIN DECISION] 4 [Mean Prob] 0.9937732050735808 [Example Ids] [257356, 257334, 257341, 257344]
+                [#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [257341, 257344, 257359, 257334, 257356]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [257334, 257356]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 孩子
+[#TRAIN DECISION] 4 [Mean Prob] 0.9639839771018178 [Example Ids] [277336, 261982, 49827, 241582]
+[#TRAIN MATCH] 21 [Acc] 0.3333333333333333 [Example Ids] [269963, 172644, 211230, 49827, 285103]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.16666666666666666 [Example Ids] [278905, 58955, 261982, 172644, 49827]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 张
+[#TRAIN DECISION] 4 [Mean Prob] 0.9613734231925299 [Example Ids] [81155, 2405, 219581, 171219]
+[#TRAIN MATCH] 18 [Acc] 0.2777777777777778 [Example Ids] [81155, 157162, 187498, 282587, 167324]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [280240, 271199, 133686]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 爱
+[#TRAIN DECISION] 4 [Mean Prob] 0.9583600903214265 [Example Ids] [261316, 256173, 23267, 235024]
+[#TRAIN MATCH] 16 [Acc] 0.3125 [Example Ids] [235024, 261316, 50818, 256173, 280543]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 8 [Acc] 0.25 [Example Ids] [50818, 162918, 269989, 158563, 277486]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 饰 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.8246674936462532 [Example Ids] [276861, 276562, 195806, 181066]
+[#TRAIN MATCH] 15 [Acc] 0.6 [Example Ids] [279714, 195806, 276861, 64916, 283799]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [262676, 64916, 262632, 279714, 195806]
+==============================
+[LEVEL] 3
+[RULE] 与 ENTITY1:person ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.836008317449204 [Example Ids] [224809, 170507, 273166, 119618]
+[#TRAIN MATCH] 14 [Acc] 0.14285714285714285 [Example Ids] [110986, 60979, 273166, 105571, 74369]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.0 [Example Ids] [105571, 130221, 170507]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 周芷若 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.984410500512403 [Example Ids] [250005, 249894, 249878, 249976]
+[#TRAIN MATCH] 14 [Acc] 1.0 [Example Ids] [249882, 249867, 249986, 249878, 249976]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [249986, 249899, 249857]
+==============================
+[LEVEL] 3
+[RULE] 爱情 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.978463600577584 [Example Ids] [282983, 215864, 218952, 218956]
+[#TRAIN MATCH] 13 [Acc] 0.6923076923076923 [Example Ids] [262370, 215864, 218952, 262341, 262346]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [262341, 262384, 262370, 262310, 262346]
+[Child] ==============================
+        [LEVEL] 5
+        [RULE] 堕落 政客 <pad>x1,3 爱情 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 8 [Mean Prob] 0.9910592191685175 [Example Ids] [262401, 262310, 262370, 262345, 262341]
+        [#TRAIN MATCH] 8 [Acc] 1.0 [Example Ids] [262370, 262341, 262346, 262401, 262345]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [262341, 262384, 262370, 262310, 262346]
+[Child] [Child] ==============================
+                [LEVEL] 7
+                [RULE] 堕落 政客 <pad>x1,3 爱情 悲歌 <pad>x1,3 ENTITY1:person 与 ENTITY2:person
+                [#TRAIN DECISION] 8 [Mean Prob] 0.9631031158148607 [Example Ids] [262401, 262345, 262310, 262370, 262351]
+                [#TRAIN MATCH] 8 [Acc] 1.0 [Example Ids] [262370, 262341, 262346, 262401, 262345]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [262341, 262384, 262370, 262310, 262346]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 夫妇
+[#TRAIN DECISION] 4 [Mean Prob] 0.9818385155725886 [Example Ids] [284032, 17151, 211112, 201297]
+[#TRAIN MATCH] 11 [Acc] 0.6363636363636364 [Example Ids] [17151, 266595, 211112, 201297, 284032]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.8 [Example Ids] [256006, 273196, 266595, 201482, 263683]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 结婚
+[#TRAIN DECISION] 4 [Mean Prob] 0.9681911067620718 [Example Ids] [280250, 52386, 51806, 190768]
+[#TRAIN MATCH] 11 [Acc] 0.5454545454545454 [Example Ids] [52386, 253641, 280237, 280247, 51806]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.3333333333333333 [Example Ids] [190768, 95854, 52386, 253641, 126595]
+==============================
+[LEVEL] 3
+[RULE] 夫妻 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9785987761852654 [Example Ids] [284025, 272958, 252244, 252217]
+[#TRAIN MATCH] 10 [Acc] 1.0 [Example Ids] [256791, 252217, 267249, 256788, 278864]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 1.0 [Example Ids] [278864, 256791, 272958, 252244, 256788]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 夫妻 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person 夫妇
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9937668303816936 [Example Ids] [278864, 256791, 256788]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [256791, 256788, 278864]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [278864, 256791, 256788]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 夫人 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9815181070216477 [Example Ids] [255935, 255967, 85093, 195311]
+[#TRAIN MATCH] 10 [Acc] 0.3 [Example Ids] [271588, 255967, 85093, 253979, 195311]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [276251, 255935, 255967, 261435, 253980]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x4,9 结婚
+[#TRAIN DECISION] 4 [Mean Prob] 0.9735073696317391 [Example Ids] [279290, 283233, 286267, 189390]
+[#TRAIN MATCH] 9 [Acc] 0.8888888888888888 [Example Ids] [254123, 286267, 286578, 278259, 258309]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278259, 286581]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 妻子
+[#TRAIN DECISION] 4 [Mean Prob] 0.97204470104465 [Example Ids] [270857, 272074, 269068, 284971]
+[#TRAIN MATCH] 9 [Acc] 0.4444444444444444 [Example Ids] [282141, 284971, 131234, 270857, 272074]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.2 [Example Ids] [270857, 131234, 261180, 72109, 282141]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ENTITY2:person 纪念馆
+[#TRAIN DECISION] 4 [Mean Prob] 0.975292066962619 [Example Ids] [251193, 251338, 251176, 251351]
+[#TRAIN MATCH] 8 [Acc] 1.0 [Example Ids] [251351, 251338, 251317, 251225, 251176]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [251351, 251193, 251317]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 爱情
+[#TRAIN DECISION] 4 [Mean Prob] 0.9742889438167691 [Example Ids] [256808, 256787, 267758, 283120]
+[#TRAIN MATCH] 8 [Acc] 0.875 [Example Ids] [267758, 75940, 256808, 256787, 249859]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [249859]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 结婚
+[#TRAIN DECISION] 4 [Mean Prob] 0.9730739530401881 [Example Ids] [279444, 267737, 96763, 47122]
+[#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [279444, 96763, 47122, 266593, 255636]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [267737, 279444]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 爱情
+[#TRAIN DECISION] 4 [Mean Prob] 0.9759876901327686 [Example Ids] [277483, 267769, 255592, 176928]
+[#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [158852, 176928, 267769, 272996, 251173]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [272859, 272996, 277483]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 嫁给
+[#TRAIN DECISION] 4 [Mean Prob] 0.9724502747978323 [Example Ids] [85713, 63855, 56814, 265525]
+[#TRAIN MATCH] 8 [Acc] 0.25 [Example Ids] [63855, 196619, 284674, 265525, 85713]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [33193, 256133, 265525]
+==============================
+[LEVEL] 3
+[RULE] 父母 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.8638885413816797 [Example Ids] [279928, 278244, 137277, 281545]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [278244, 279928, 137277, 248856, 264761]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [281545, 248856, 278244]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 父母 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.6376766182041222 [Example Ids] [279928, 278244, 137277]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [278244, 279928, 137277, 279400]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [278244]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 教主 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9668092132501693 [Example Ids] [249961, 249967, 249915, 185569]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [249967, 249961, 273496, 185569, 272147]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 妻子
+[#TRAIN DECISION] 4 [Mean Prob] 0.9683414064672368 [Example Ids] [273515, 272096, 255815, 253487]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [272096, 255802, 253487, 273515, 281394]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [253487]
+==============================
+[LEVEL] 3
+[RULE] 丈夫 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9765275124173 [Example Ids] [75759, 280878, 93996, 85676]
+[#TRAIN MATCH] 6 [Acc] 0.5 [Example Ids] [85676, 284927, 283768, 93996, 280878]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [280878]
+==============================
+[LEVEL] 3
+[RULE] 赵本山 <pad>x1,3 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.974866204116818 [Example Ids] [268218, 268228, 268212, 268221]
+[#TRAIN MATCH] 6 [Acc] 1.0 [Example Ids] [268254, 268221, 268212, 268228, 268218]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [268254, 268221, 268228]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 演员 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9395469276063594 [Example Ids] [154359, 160074, 154364, 156736]
+[#TRAIN MATCH] 5 [Acc] 0.0 [Example Ids] [227183, 156736, 154364, 154359, 160074]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.0 [Example Ids] [156736, 227183, 154359]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 、 ENTITY1:person 演员 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8518606696678054 [Example Ids] [154359, 160074, 154364]
+        [#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [154364, 154359, 160074]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [154359]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 夫人 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9818548702426024 [Example Ids] [251284, 251266, 266266, 255626]
+[#TRAIN MATCH] 5 [Acc] 0.8 [Example Ids] [36866, 251284, 266266, 251266, 255626]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [251284]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 嫁给 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.963366192313047 [Example Ids] [277941, 273862, 264077, 100325]
+[#TRAIN MATCH] 5 [Acc] 0.6 [Example Ids] [277941, 273862, 120462, 100325, 264077]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [120462, 100325, 264077]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 婚恋
+[#TRAIN DECISION] 4 [Mean Prob] 0.9614417054285495 [Example Ids] [278866, 266243, 272989, 198896]
+[#TRAIN MATCH] 5 [Acc] 0.8 [Example Ids] [272989, 198896, 278866, 266243, 269036]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [266243, 278866, 272989]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 与 ENTITY2:person <pad>x1,3 婚恋
+        [#TRAIN DECISION] 4 [Mean Prob] 0.896125359235403 [Example Ids] [278866, 266243, 272989, 198896]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [272989, 198896, 278866, 266243]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [266243, 278866, 272989]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 妻子
+[#TRAIN DECISION] 4 [Mean Prob] 0.9642322605936482 [Example Ids] [279924, 172608, 284996, 174397]
+[#TRAIN MATCH] 5 [Acc] 0.2 [Example Ids] [174397, 284996, 35029, 279924, 172608]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [35029, 279924, 172608]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 携
+[#TRAIN DECISION] 4 [Mean Prob] 0.9719154719178454 [Example Ids] [12412, 282704, 282718, 87935]
+[#TRAIN MATCH] 5 [Acc] 0.0 [Example Ids] [282718, 54536, 12412, 282704, 87935]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.0 [Example Ids] [282704, 87935, 12412]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 妻
+[#TRAIN DECISION] 4 [Mean Prob] 0.9800977970044662 [Example Ids] [277531, 87238, 32138, 103596]
+[#TRAIN MATCH] 4 [Acc] 0.25 [Example Ids] [87238, 32138, 103596, 277531]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.25 [Example Ids] [87238, 103596, 32138, 277531]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 嫁 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.954892268833047 [Example Ids] [285239, 255965, 15700, 143279]
+[#TRAIN MATCH] 4 [Acc] 0.5 [Example Ids] [255965, 285239, 15700, 143279]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 刘德华
+[#TRAIN DECISION] 4 [Mean Prob] 0.9669186039676219 [Example Ids] [269067, 269046, 269034, 280171]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [280171, 269046, 269067, 269034]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [269067]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 答夫 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9745605830731481 [Example Ids] [252274, 252264, 252273, 252178]
+[#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [252274, 252273, 252178, 252264]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [252273, 252274]
+==============================
+[LEVEL] 4
+[RULE] 月 <pad>x1,3 日 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.8618837459111885 [Example Ids] [163808, 270219, 125551, 183761]
+[#TRAIN MATCH] 193 [Acc] 0.5595854922279793 [Example Ids] [285945, 134571, 278914, 44145, 271065]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [286951]
+[#TEST MATCH] 78 [Acc] 0.5512820512820513 [Example Ids] [267748, 181327, 266886, 276604, 92899]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 婚礼 <pad>x4,9 证婚人
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9813791276310527 [Example Ids] [279906, 279914, 279909]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [279914, 279906, 279909]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+[Child] ==============================
+        [LEVEL] 5
+        [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 婚礼
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9843057536466753 [Example Ids] [274128, 282586, 279926]
+        [#TRAIN MATCH] 5 [Acc] 0.6 [Example Ids] [8064, 274128, 282586, 266617, 279926]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [282586, 8064, 266617]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 月 <pad>x1,3 ENTITY1:person 和 ENTITY2:person <pad>x1,3 印尼 巴厘岛
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9859399531068614 [Example Ids] [267389, 267406, 267416]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267389, 267416, 267406]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267416, 267406, 267389]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person 比 ENTITY2:person <pad>x1,3 岁
+[#TRAIN DECISION] 4 [Mean Prob] 0.9485601517728377 [Example Ids] [274467, 280926, 280415, 199257]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [285100, 280926, 285101, 274467, 199257]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.8 [Example Ids] [285101, 22787, 285100, 274467, 280926]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 函 <pad>x4,9 月
+[#TRAIN DECISION] 4 [Mean Prob] 0.9732020445996574 [Example Ids] [255875, 255947, 255799, 256019]
+[#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [255947, 256019, 255799, 255875]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [255875]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 函 <pad>x1,3 1927
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9749939492993055 [Example Ids] [255875, 255947, 256019]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [255947, 256019, 255875]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [255875]
+==============================
+[LEVEL] 4
+[RULE] 宁国府 ENTITY1:person 媳妇 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9813968228464526 [Example Ids] [257357, 257352, 257319, 257337]
+[#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [257352, 257357, 257337, 257319]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person 携 爱妻 ENTITY2:person
+[#TRAIN DECISION] 4 [Mean Prob] 0.9857300202817949 [Example Ids] [269958, 273418, 278946, 278926]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [278946, 269958, 278926, 273418]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 与 <pad>x1,3 主持人 ENTITY1:person 携 爱妻 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.944501844392225 [Example Ids] [273418, 278946, 278926]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [278946, 278926, 273418]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 在
+[#TRAIN DECISION] 3 [Mean Prob] 0.7877726057920081 [Example Ids] [231303, 248750, 85515]
+[#TRAIN MATCH] 288 [Acc] 0.3333333333333333 [Example Ids] [281286, 134571, 262405, 38802, 174520]
+[#DEV MATCH] 3 [Acc] 0.0 [Example Ids] [40151, 157354, 171337]
+[#TEST MATCH] 105 [Acc] 0.34285714285714286 [Example Ids] [76670, 274981, 266886, 108538, 172363]
+==============================
+[LEVEL] 3
+[RULE] 月 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9606750999797175 [Example Ids] [106605, 138611, 40735]
+[#TRAIN MATCH] 199 [Acc] 0.32160804020100503 [Example Ids] [278914, 130877, 172735, 255863, 53589]
+[#DEV MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [53744, 267256, 191347]
+[#TEST MATCH] 74 [Acc] 0.32432432432432434 [Example Ids] [170778, 284434, 12348, 92899, 191027]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 月 <pad>x4,9 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9744109268511317 [Example Ids] [282793, 10524, 180740]
+        [#TRAIN MATCH] 14 [Acc] 0.5 [Example Ids] [255863, 142434, 282793, 256050, 280242]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 0.6 [Example Ids] [256050, 273570, 255863, 198480, 10524]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 她
+[#TRAIN DECISION] 3 [Mean Prob] 0.7809053367272639 [Example Ids] [254469, 261976, 190038]
+[#TRAIN MATCH] 119 [Acc] 0.46218487394957986 [Example Ids] [266782, 98524, 39401, 47069, 149125]
+[#DEV MATCH] 2 [Acc] 1.0 [Example Ids] [256780, 279252]
+[#TEST MATCH] 44 [Acc] 0.5227272727272727 [Example Ids] [262650, 281507, 271030, 278329, 283063]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 爱上 <pad>x1,3 ENTITY2:person <pad>x1,3 程铮
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9791945379200625 [Example Ids] [283639, 283638, 283629]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [283638, 283629, 283639]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 与
+[#TRAIN DECISION] 3 [Mean Prob] 0.8252151782073501 [Example Ids] [278963, 2402, 203078]
+[#TRAIN MATCH] 91 [Acc] 0.16483516483516483 [Example Ids] [254316, 232822, 32780, 70966, 213940]
+[#DEV MATCH] 2 [Acc] 0.5 [Example Ids] [100793, 255646]
+[#TEST MATCH] 38 [Acc] 0.10526315789473684 [Example Ids] [253618, 39160, 202635, 280156, 283648]
+==============================
+[LEVEL] 3
+[RULE] 人物 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.8039817261950096 [Example Ids] [181542, 277067, 165701]
+[#TRAIN MATCH] 68 [Acc] 0.3235294117647059 [Example Ids] [160259, 99876, 274171, 270608, 276496]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [278120]
+[#TEST MATCH] 23 [Acc] 0.13043478260869565 [Example Ids] [286321, 193119, 285099, 54016, 151460]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 人物 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.8576362686471204 [Example Ids] [188013, 250881, 274174, 75457]
+        [#TRAIN MATCH] 14 [Acc] 0.5 [Example Ids] [270608, 276496, 104627, 257323, 279249]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 5 [Acc] 0.2 [Example Ids] [188013, 250881, 75457, 252196, 274174]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 和 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9546180243905823 [Example Ids] [184733, 172002, 145466]
+[#TRAIN MATCH] 67 [Acc] 0.3283582089552239 [Example Ids] [151330, 145466, 184733, 8482, 116392]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [270840]
+[#TEST MATCH] 33 [Acc] 0.30303030303030304 [Example Ids] [211115, 276928, 9317, 253609, 273179]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 和 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9604420191254269 [Example Ids] [255751, 170632, 93551]
+[#TRAIN MATCH] 59 [Acc] 0.2711864406779661 [Example Ids] [63027, 279453, 93551, 180423, 170632]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [269978]
+[#TEST MATCH] 18 [Acc] 0.2222222222222222 [Example Ids] [93551, 273526, 199478, 145921, 7900]
+==============================
+[LEVEL] 3
+[RULE] 爱情 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9807107875819141 [Example Ids] [273734, 265052, 199997]
+[#TRAIN MATCH] 12 [Acc] 0.6666666666666666 [Example Ids] [268255, 273734, 265052, 268259, 148262]
+[#DEV MATCH] 1 [Acc] 0.0 [Example Ids] [100086]
+[#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [273734, 148262, 278407, 268255, 199997]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 老婆 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.981323134677996 [Example Ids] [276607, 264052, 238189]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [262344, 238189, 276607, 264052]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [276607]
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [262344, 264052, 238189]
+==============================
+[LEVEL] 3
+[RULE] 师侄 <pad>x1,3 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9768543694960816 [Example Ids] [269605, 269623, 269617]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [269623, 269605, 269617]
+[#DEV MATCH] 1 [Acc] 1.0 [Example Ids] [269605]
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 和
+[#TRAIN DECISION] 3 [Mean Prob] 0.9537572179281611 [Example Ids] [264442, 237393, 54080]
+[#TRAIN MATCH] 117 [Acc] 0.20512820512820512 [Example Ids] [108183, 32780, 277094, 270319, 196096]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 39 [Acc] 0.20512820512820512 [Example Ids] [109256, 277094, 218764, 191685, 275211]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 也
+[#TRAIN DECISION] 3 [Mean Prob] 0.7586386064892797 [Example Ids] [244127, 230183, 283941]
+[#TRAIN MATCH] 84 [Acc] 0.2976190476190476 [Example Ids] [273191, 258323, 283941, 212513, 185756]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 30 [Acc] 0.26666666666666666 [Example Ids] [69529, 59480, 194497, 55150, 268646]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 和 ENTITY2:person <pad>x1,3 也
+        [#TRAIN DECISION] 5 [Mean Prob] 0.8522975758444282 [Example Ids] [273485, 272139, 268646, 204383, 239396]
+        [#TRAIN MATCH] 9 [Acc] 0.2222222222222222 [Example Ids] [268646, 78217, 239396, 9704, 272139]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [268646, 272139, 9704]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 爱上 <pad>x1,3 ENTITY2:person <pad>x1,3 程铮
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9791945379200625 [Example Ids] [283639, 283638, 283629]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [283638, 283629, 283639]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 人物 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.8017305600932061 [Example Ids] [117582, 284729, 46767]
+[#TRAIN MATCH] 70 [Acc] 0.2857142857142857 [Example Ids] [91815, 261109, 2479, 45362, 56795]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 23 [Acc] 0.21739130434782608 [Example Ids] [117582, 245187, 283415, 277893, 87830]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 人物 <pad>x1,3 妻子 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9677237047157036 [Example Ids] [227669, 278399, 284024]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [227669, 284024, 278399]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [227669]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 和 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9559808676267751 [Example Ids] [88450, 159923, 280074]
+[#TRAIN MATCH] 63 [Acc] 0.30158730158730157 [Example Ids] [274725, 34052, 22840, 266594, 286971]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 31 [Acc] 0.25806451612903225 [Example Ids] [184333, 179861, 119987, 133187, 274725]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 她
+[#TRAIN DECISION] 3 [Mean Prob] 0.7917737968697437 [Example Ids] [114588, 101716, 120537]
+[#TRAIN MATCH] 59 [Acc] 0.3389830508474576 [Example Ids] [120537, 253906, 256741, 114588, 262658]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 23 [Acc] 0.34782608695652173 [Example Ids] [101716, 71968, 270753, 128947, 262658]
+==============================
+[LEVEL] 3
+[RULE] 导演 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.7576555694319652 [Example Ids] [247208, 98254, 125358]
+[#TRAIN MATCH] 48 [Acc] 0.25 [Example Ids] [177255, 280087, 97677, 190241, 250004]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 23 [Acc] 0.391304347826087 [Example Ids] [16481, 201865, 156736, 280099, 2842]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 导演 <pad>x1,3 ENTITY1:person 、 ENTITY2:person
+        [#TRAIN DECISION] 9 [Mean Prob] 0.7331706713958261 [Example Ids] [87608, 16481, 163179, 9675, 227876]
+        [#TRAIN MATCH] 19 [Acc] 0.21052631578947367 [Example Ids] [280087, 190241, 16481, 87608, 43955]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [16481, 280088, 269989, 227876, 280087]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 张
+[#TRAIN DECISION] 3 [Mean Prob] 0.9452427419272741 [Example Ids] [152953, 26048, 89361]
+[#TRAIN MATCH] 44 [Acc] 0.3181818181818182 [Example Ids] [247990, 146635, 86255, 104905, 251234]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 12 [Acc] 0.3333333333333333 [Example Ids] [280419, 182279, 270718, 14151, 104905]
+==============================
+[LEVEL] 3
+[RULE] 和 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9568524729742393 [Example Ids] [136431, 253644, 372]
+[#TRAIN MATCH] 41 [Acc] 0.21951219512195122 [Example Ids] [54092, 217515, 257957, 276277, 84452]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 14 [Acc] 0.07142857142857142 [Example Ids] [203665, 273599, 211324, 276708, 54092]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 着 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.8143648050691334 [Example Ids] [269950, 23061, 107006]
+[#TRAIN MATCH] 36 [Acc] 0.4444444444444444 [Example Ids] [156255, 281559, 166547, 85075, 107006]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 18 [Acc] 0.4444444444444444 [Example Ids] [203665, 32996, 118948, 152331, 278322]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 要
+[#TRAIN DECISION] 3 [Mean Prob] 0.7903308485682062 [Example Ids] [128233, 9926, 227352]
+[#TRAIN MATCH] 31 [Acc] 0.25806451612903225 [Example Ids] [208963, 182602, 196033, 220162, 284943]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 18 [Acc] 0.2222222222222222 [Example Ids] [9926, 91941, 257984, 199703, 121027]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 和
+[#TRAIN DECISION] 3 [Mean Prob] 0.9641420159990544 [Example Ids] [182227, 204899, 16573]
+[#TRAIN MATCH] 27 [Acc] 0.14814814814814814 [Example Ids] [93007, 247640, 151452, 178246, 226615]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 12 [Acc] 0.16666666666666666 [Example Ids] [16573, 69073, 279275, 75083, 32892]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 人物 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.8111401243696066 [Example Ids] [191395, 285962, 263078]
+[#TRAIN MATCH] 26 [Acc] 0.19230769230769232 [Example Ids] [246988, 37369, 277873, 278261, 252249]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 10 [Acc] 0.1 [Example Ids] [14880, 14151, 280953, 191395, 10026]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, 和 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9695312417854044 [Example Ids] [42696, 233185, 222777]
+[#TRAIN MATCH] 25 [Acc] 0.28 [Example Ids] [284005, 283235, 281327, 269061, 233185]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 9 [Acc] 0.3333333333333333 [Example Ids] [272987, 281327, 222777, 194507, 162442]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 孩子
+[#TRAIN DECISION] 3 [Mean Prob] 0.9503271052455196 [Example Ids] [275525, 64892, 283767]
+[#TRAIN MATCH] 21 [Acc] 0.7142857142857143 [Example Ids] [273150, 269091, 283798, 257993, 278242]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.5714285714285714 [Example Ids] [283796, 51882, 64892, 257207, 249881]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 婚礼
+[#TRAIN DECISION] 3 [Mean Prob] 0.9759650160067244 [Example Ids] [266588, 285399, 197359]
+[#TRAIN MATCH] 19 [Acc] 0.7894736842105263 [Example Ids] [279907, 255633, 274124, 280163, 269972]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [285399, 282585, 266588, 251204, 274124]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x4,9 张
+[#TRAIN DECISION] 3 [Mean Prob] 0.9694811529080355 [Example Ids] [68066, 284595, 83899]
+[#TRAIN MATCH] 18 [Acc] 0.3333333333333333 [Example Ids] [265068, 265025, 7030, 286185, 204460]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [265068, 286185, 83899, 131228, 249868]
+==============================
+[LEVEL] 3
+[RULE] 演员 <pad>x1,3 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9617803731761211 [Example Ids] [128988, 849, 259548]
+[#TRAIN MATCH] 15 [Acc] 0.6 [Example Ids] [259569, 282627, 268254, 268221, 268212]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 9 [Acc] 0.6666666666666666 [Example Ids] [259569, 128988, 259548, 106898, 282627]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 南京
+[#TRAIN DECISION] 3 [Mean Prob] 0.9619643297510171 [Example Ids] [256111, 142473, 72169]
+[#TRAIN MATCH] 14 [Acc] 0.5 [Example Ids] [255846, 117509, 57068, 255666, 137569]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [274430, 142473, 160820]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 导演 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.780633279165161 [Example Ids] [176455, 168304, 74022]
+[#TRAIN MATCH] 13 [Acc] 0.46153846153846156 [Example Ids] [259587, 276892, 143387, 48448, 275512]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.5 [Example Ids] [143387, 259587, 23720, 276892, 74022]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 南京
+[#TRAIN DECISION] 3 [Mean Prob] 0.9697844931737438 [Example Ids] [284172, 262306, 151744]
+[#TRAIN MATCH] 13 [Acc] 0.46153846153846156 [Example Ids] [255802, 196063, 262362, 256209, 121465]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.25 [Example Ids] [196063, 49489, 262306, 121465]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 夫妻
+[#TRAIN DECISION] 3 [Mean Prob] 0.979149936117094 [Example Ids] [255934, 274755, 281186]
+[#TRAIN MATCH] 13 [Acc] 0.9230769230769231 [Example Ids] [252207, 252234, 248862, 255934, 255764]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.8 [Example Ids] [274755, 281186, 282687, 267313, 267265]
+==============================
+[LEVEL] 3
+[RULE] 孙中山 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9830371663071222 [Example Ids] [251322, 251241, 251274]
+[#TRAIN MATCH] 12 [Acc] 1.0 [Example Ids] [251330, 251205, 251274, 255860, 251322]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [251182, 255860, 251274]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, 夫人 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9810611049751573 [Example Ids] [276558, 276551, 56820]
+[#TRAIN MATCH] 12 [Acc] 0.9166666666666666 [Example Ids] [276551, 276558, 266254, 267628, 255619]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [276551, 56820, 266262, 266254]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 张无忌
+[#TRAIN DECISION] 3 [Mean Prob] 0.9800327708825883 [Example Ids] [272106, 273499, 272075]
+[#TRAIN MATCH] 12 [Acc] 0.8333333333333334 [Example Ids] [272075, 273563, 272095, 272106, 272123]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [273499, 250011, 249886, 272075, 272152]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 同 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.929275849630692 [Example Ids] [72752, 85710, 256178]
+[#TRAIN MATCH] 11 [Acc] 0.36363636363636365 [Example Ids] [235708, 160156, 272960, 267637, 9559]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.25 [Example Ids] [267626, 195775, 53558, 85710]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 嫁给 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9742272113138887 [Example Ids] [286572, 286912, 284386]
+[#TRAIN MATCH] 11 [Acc] 0.7272727272727273 [Example Ids] [36158, 255618, 284386, 264167, 256225]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [275430, 264098, 286912, 256225, 286572]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 孙权 <pad>x1,3 周瑜 <pad>x10, 孙权 <pad>x1,3 ENTITY1:person 嫁给 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9890442584564102 [Example Ids] [256225, 264098, 264037]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [256225, 264098, 264037]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [264098, 256225]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 妻子 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9768287753897352 [Example Ids] [276272, 231654, 75761]
+[#TRAIN MATCH] 10 [Acc] 0.6 [Example Ids] [75761, 276272, 269612, 276270, 281512]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.8 [Example Ids] [276272, 284173, 252211, 281162, 276270]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ENTITY2:person <pad>x1,3 张
+[#TRAIN DECISION] 3 [Mean Prob] 0.8249008006328279 [Example Ids] [283576, 162641, 283118]
+[#TRAIN MATCH] 9 [Acc] 0.5555555555555556 [Example Ids] [283118, 162641, 283576, 284644, 259594]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [259594, 273750, 282771, 265892]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ENTITY2:person <pad>x1,3 日子
+[#TRAIN DECISION] 3 [Mean Prob] 0.9618198457628552 [Example Ids] [256200, 256179, 255978]
+[#TRAIN MATCH] 9 [Acc] 1.0 [Example Ids] [256179, 255676, 255978, 256189, 255864]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [255864, 256189, 255676]
+==============================
+[LEVEL] 3
+[RULE] 倚天 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9767685694378034 [Example Ids] [249990, 249889, 266559]
+[#TRAIN MATCH] 9 [Acc] 0.7777777777777778 [Example Ids] [272088, 272122, 250020, 266559, 249889]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [249950, 272126, 249990]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 夫妻
+[#TRAIN DECISION] 3 [Mean Prob] 0.9786621579643943 [Example Ids] [269538, 80960, 281582]
+[#TRAIN MATCH] 9 [Acc] 0.5555555555555556 [Example Ids] [281582, 252265, 273563, 258995, 269538]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272115, 269538, 280086]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, 嫁给 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.969094881155533 [Example Ids] [269621, 285724, 283515]
+[#TRAIN MATCH] 9 [Acc] 0.8888888888888888 [Example Ids] [272593, 272609, 269621, 272602, 275437]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [275437, 269621, 272580, 272593]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x10, 嫁给 ENTITY2:person 为妻
+        [#TRAIN DECISION] 5 [Mean Prob] 0.9823853130663279 [Example Ids] [272609, 272593, 272580, 272602, 268719]
+        [#TRAIN MATCH] 5 [Acc] 0.8 [Example Ids] [272593, 272609, 272602, 268719, 272580]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [272580, 272593]
+==============================
+[LEVEL] 3
+[RULE] 妻子 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9687703161240275 [Example Ids] [119411, 203400, 284842]
+[#TRAIN MATCH] 9 [Acc] 0.4444444444444444 [Example Ids] [119411, 203400, 275380, 259974, 280884]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.0 [Example Ids] [259974, 203400, 260590, 284842]
+==============================
+[LEVEL] 3
+[RULE] 2014 <pad>x10, ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.973416981015005 [Example Ids] [286403, 194766, 10612]
+[#TRAIN MATCH] 9 [Acc] 0.3333333333333333 [Example Ids] [278265, 253494, 10612, 285777, 285767]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 6 [Acc] 0.3333333333333333 [Example Ids] [280244, 56684, 278265, 253494, 285777]
+==============================
+[LEVEL] 3
+[RULE] 演员 <pad>x1,3 ENTITY1:person ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.818096408631491 [Example Ids] [89219, 17457, 267363]
+[#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [17457, 258319, 280892, 258284, 280874]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [258284, 89219, 17457]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 老婆 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9765462966791656 [Example Ids] [278281, 278228, 284136]
+[#TRAIN MATCH] 8 [Acc] 0.75 [Example Ids] [278265, 105909, 278281, 284136, 161400]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [278265, 278281]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 民国
+[#TRAIN DECISION] 3 [Mean Prob] 0.9617608739453184 [Example Ids] [282693, 70576, 255759]
+[#TRAIN MATCH] 8 [Acc] 0.5 [Example Ids] [2157, 282693, 29711, 255759, 255712]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.4 [Example Ids] [70576, 255712, 69163, 282693, 2157]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 救 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.6110250274382919 [Example Ids] [262319, 225879, 221888]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [225879, 249891, 276274, 262319, 221888]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [276274, 249891, 253666, 262319]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 只是
+[#TRAIN DECISION] 3 [Mean Prob] 0.9420331206596465 [Example Ids] [237732, 231740, 191866]
+[#TRAIN MATCH] 7 [Acc] 0.0 [Example Ids] [68718, 108583, 231740, 153620, 237732]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.0 [Example Ids] [153620, 231740, 191866, 237732]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 夫妻
+[#TRAIN DECISION] 3 [Mean Prob] 0.9773948800545423 [Example Ids] [180700, 117986, 243489]
+[#TRAIN MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [267764, 281581, 243489, 44555, 117986]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 夫妻
+[#TRAIN DECISION] 3 [Mean Prob] 0.9770760405005898 [Example Ids] [268264, 284922, 17456]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [275419, 283064, 268239, 284922, 17456]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283064]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 宋美龄
+[#TRAIN DECISION] 3 [Mean Prob] 0.9812146977649531 [Example Ids] [255794, 263140, 256030]
+[#TRAIN MATCH] 7 [Acc] 0.8571428571428571 [Example Ids] [256030, 256207, 255923, 256132, 256053]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [255794, 256207]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 丈夫 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9671294674140843 [Example Ids] [16399, 286685, 279256]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [279256, 261295, 286685, 284757, 277055]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [261295, 277055]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x10, 感动
+[#TRAIN DECISION] 3 [Mean Prob] 0.9710825254516413 [Example Ids] [185490, 131943, 262340]
+[#TRAIN MATCH] 7 [Acc] 0.5714285714285714 [Example Ids] [282770, 185490, 254147, 262340, 131943]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [272873, 185490]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 夫人 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9802046392545307 [Example Ids] [278088, 19792, 69726]
+[#TRAIN MATCH] 7 [Acc] 0.42857142857142855 [Example Ids] [276570, 259267, 69726, 272500, 278088]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [278088, 272500]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 居住
+[#TRAIN DECISION] 3 [Mean Prob] 0.9634184186428322 [Example Ids] [256199, 190355, 36693]
+[#TRAIN MATCH] 7 [Acc] 0.2857142857142857 [Example Ids] [285396, 256199, 217032, 270309, 36693]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [270309, 217032]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 娶 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9690071982778915 [Example Ids] [264028, 279076, 255749]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [255749, 264028, 279076, 13894, 278325]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [13894, 278325, 250037]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 太太 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9665617693272365 [Example Ids] [284953, 256811, 281556]
+[#TRAIN MATCH] 7 [Acc] 0.7142857142857143 [Example Ids] [281556, 282626, 256811, 259549, 136961]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [259549, 256811, 282626, 136961]
+==============================
+[LEVEL] 3
+[RULE] 幸福 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9802762106340702 [Example Ids] [282694, 282676, 268236]
+[#TRAIN MATCH] 7 [Acc] 0.8571428571428571 [Example Ids] [268236, 282676, 282687, 267281, 282696]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [282687, 282694, 282696, 282676]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 夫人
+[#TRAIN DECISION] 3 [Mean Prob] 0.976713442144063 [Example Ids] [267124, 283912, 4443]
+[#TRAIN MATCH] 7 [Acc] 0.14285714285714285 [Example Ids] [283912, 4443, 284915, 244907, 267124]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 0.2 [Example Ids] [4443, 284915, 283912, 86206, 267124]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 你 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.8046854527413435 [Example Ids] [204348, 278996, 274714]
+[#TRAIN MATCH] 6 [Acc] 0.3333333333333333 [Example Ids] [278996, 277938, 218555, 204348, 274714]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [218555, 277938]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 看 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.950267687819224 [Example Ids] [192890, 189887, 165366]
+[#TRAIN MATCH] 6 [Acc] 0.16666666666666666 [Example Ids] [114850, 189887, 192890, 167278, 254100]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [114850, 189887]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x10, 生命
+[#TRAIN DECISION] 3 [Mean Prob] 0.9710398850685967 [Example Ids] [269071, 269961, 165140]
+[#TRAIN MATCH] 6 [Acc] 0.5 [Example Ids] [165140, 196063, 269961, 269071, 189287]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [196063]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 移花宫 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9778351096415432 [Example Ids] [259922, 271026, 271015]
+[#TRAIN MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [271015, 271041, 271026, 271029, 271008]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [271029, 271026]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 和 <pad>x1,3 双生 <pad>x1,3 ENTITY1:person 和 移花宫 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 4 [Mean Prob] 0.9859734513656121 [Example Ids] [271008, 259922, 271026, 271015]
+        [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [271015, 271026, 271008, 259922]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [271026]
+[Child] [Child] ==============================
+                [LEVEL] 7
+                [RULE] 小鱼儿 和 <pad>x1,3 双生 <pad>x1,3 ENTITY1:person 和 移花宫 <pad>x1,3 ENTITY2:person
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9191501215013819 [Example Ids] [259922, 271026, 271015]
+                [#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [271015, 271026, 271008, 259922]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [271026]
+==============================
+[LEVEL] 3
+[RULE] 汉奸 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9654804665379504 [Example Ids] [262325, 262329, 262331]
+[#TRAIN MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [262407, 262331, 262329, 262299, 63258]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [262325, 262299]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] 汉奸 ENTITY1:person 和 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9724670369790966 [Example Ids] [262325, 262329, 262331]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [262331, 262329, 262325]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [262325]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 焦恩俊
+[#TRAIN DECISION] 3 [Mean Prob] 0.9669164003790934 [Example Ids] [265030, 273735, 265051]
+[#TRAIN MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [265059, 265024, 265030, 265074, 265051]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [265030, 265074, 273735]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 纪念馆
+[#TRAIN DECISION] 3 [Mean Prob] 0.9746879912290677 [Example Ids] [251334, 251240, 227927]
+[#TRAIN MATCH] 6 [Acc] 0.8333333333333334 [Example Ids] [251240, 251164, 227927, 251166, 251249]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [227927, 251249, 251164]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 则 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9497255192472963 [Example Ids] [272977, 92371, 128709]
+[#TRAIN MATCH] 6 [Acc] 0.3333333333333333 [Example Ids] [272977, 273670, 115600, 128709, 92371]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [92371, 266225, 272977]
+==============================
+[LEVEL] 3
+[RULE] 赵本山 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9699891211521313 [Example Ids] [268251, 268260, 268233]
+[#TRAIN MATCH] 6 [Acc] 1.0 [Example Ids] [268233, 268211, 268260, 268249, 268215]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [268249, 268233, 268260, 268251]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 婚礼
+[#TRAIN DECISION] 3 [Mean Prob] 0.9737197920164777 [Example Ids] [285765, 286087, 44376]
+[#TRAIN MATCH] 6 [Acc] 0.6666666666666666 [Example Ids] [253533, 286087, 44376, 282039, 278077]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 0.75 [Example Ids] [286087, 285765, 44376, 278077]
+==============================
+[LEVEL] 3
+[RULE] 日子 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9736563181673774 [Example Ids] [269948, 266261, 141349]
+[#TRAIN MATCH] 5 [Acc] 0.4 [Example Ids] [220617, 266261, 170887, 269948, 141349]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [170887, 266261]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 车
+[#TRAIN DECISION] 3 [Mean Prob] 0.9563051679996608 [Example Ids] [261320, 132769, 179671]
+[#TRAIN MATCH] 5 [Acc] 0.2 [Example Ids] [179671, 132769, 201458, 261320, 65611]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [132769, 261320]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 孙中山 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9803815815358101 [Example Ids] [251278, 262389, 255733]
+[#TRAIN MATCH] 5 [Acc] 0.8 [Example Ids] [255733, 93128, 255817, 251278, 262389]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [93128]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 一辈子
+[#TRAIN DECISION] 3 [Mean Prob] 0.9676461477859619 [Example Ids] [269954, 249925, 276252]
+[#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [273153, 277486, 269954, 276252, 249925]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [277486]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 夫妇 <pad>x10, ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9826673177448519 [Example Ids] [262410, 15155, 65106]
+[#TRAIN MATCH] 5 [Acc] 0.6 [Example Ids] [278074, 15155, 65106, 266254, 262410]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [262410, 266254]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x4,9 夫人
+[#TRAIN DECISION] 3 [Mean Prob] 0.9788226708624327 [Example Ids] [248401, 79854, 255276]
+[#TRAIN MATCH] 5 [Acc] 0.0 [Example Ids] [169375, 255276, 248401, 80773, 79854]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [79854, 255276]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 孙权
+[#TRAIN DECISION] 3 [Mean Prob] 0.9714458936510647 [Example Ids] [259169, 264044, 256361]
+[#TRAIN MATCH] 5 [Acc] 0.6 [Example Ids] [259169, 283048, 256361, 264044, 264070]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [259169, 264070, 264044]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 爱
+[#TRAIN DECISION] 3 [Mean Prob] 0.9477660644267437 [Example Ids] [83286, 276255, 257196]
+[#TRAIN MATCH] 5 [Acc] 0.4 [Example Ids] [257196, 121857, 83286, 276255, 277310]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [83286, 276255, 121857]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 沈浪
+[#TRAIN DECISION] 3 [Mean Prob] 0.9770441181011491 [Example Ids] [253670, 253654, 253675]
+[#TRAIN MATCH] 5 [Acc] 1.0 [Example Ids] [253670, 253572, 253602, 253654, 253675]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 4 [Acc] 1.0 [Example Ids] [253572, 253675, 253654, 253602]
+==============================
+[LEVEL] 3
+[RULE] 齐小萱 <pad>x1,3 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9714887419440585 [Example Ids] [269619, 269624, 269607]
+[#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [269610, 269619, 269624, 269607]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] 幸福 <pad>x4,9 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9793116690223963 [Example Ids] [253667, 283797, 283799]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [283799, 147740, 253667, 283797]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x4,9 丈夫
+[#TRAIN DECISION] 3 [Mean Prob] 0.9748878456777286 [Example Ids] [203711, 189791, 222139]
+[#TRAIN MATCH] 4 [Acc] 0.25 [Example Ids] [203711, 189791, 273063, 222139]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 妻子 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9741083541878744 [Example Ids] [280239, 30895, 52021]
+[#TRAIN MATCH] 4 [Acc] 0.25 [Example Ids] [105909, 52021, 280239, 30895]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 嫁 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9468404811431127 [Example Ids] [285241, 277533, 270903]
+[#TRAIN MATCH] 4 [Acc] 0.5 [Example Ids] [82241, 270903, 277533, 285241]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [82241]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 夫人 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9773188030833012 [Example Ids] [264132, 59903, 284050]
+[#TRAIN MATCH] 4 [Acc] 0.25 [Example Ids] [264132, 284050, 263096, 59903]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [284050]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person ENTITY2:person 婚礼
+[#TRAIN DECISION] 3 [Mean Prob] 0.9735675861810426 [Example Ids] [254136, 266586, 271989]
+[#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [254136, 266622, 271989, 266586]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [266622, 271989]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person <pad>x1,3 爱情故事
+[#TRAIN DECISION] 3 [Mean Prob] 0.9641443243701345 [Example Ids] [255654, 255785, 251071]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [255654, 251071, 255785, 255847]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [255785, 251071]
+==============================
+[LEVEL] 3
+[RULE] 爱 <pad>x4,9 ENTITY1:person <pad>x10, ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9733569490945139 [Example Ids] [264178, 260609, 157262]
+[#TRAIN MATCH] 4 [Acc] 0.25 [Example Ids] [260609, 157262, 264178, 132683]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [264178, 260609]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 巴厘岛
+[#TRAIN DECISION] 3 [Mean Prob] 0.979175342353675 [Example Ids] [267389, 267406, 267416]
+[#TRAIN MATCH] 4 [Acc] 1.0 [Example Ids] [267389, 267416, 267406, 267421]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267416, 267406, 267389]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 忙 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.963140559248691 [Example Ids] [259579, 266227, 194705]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [259579, 194705, 266227, 277060]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [259579, 194705, 266227]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person 丈夫 <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9650669837554801 [Example Ids] [285194, 284741, 15867]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [284741, 283055, 15867, 285194]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [15867, 284741, 283055]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 投江
+[#TRAIN DECISION] 3 [Mean Prob] 0.9720979152806114 [Example Ids] [264067, 256344, 264124]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [264146, 256344, 264067, 264124]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [264067, 256344, 264146]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 遥祭 <pad>x1,3 投江
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9762685938042464 [Example Ids] [264146, 256344, 264124]
+        [#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [264146, 256344, 264124]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [256344, 264146]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person 妻子
+[#TRAIN DECISION] 3 [Mean Prob] 0.9708040524657692 [Example Ids] [276614, 273080, 267763]
+[#TRAIN MATCH] 4 [Acc] 0.75 [Example Ids] [276614, 281033, 273080, 267763]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [273080, 276614, 267763]
+==============================
+[LEVEL] 3
+[RULE] 王菲 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9687521451677115 [Example Ids] [273413, 278941, 285604]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [285604, 278941, 273413]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [278941]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 惊喜
+[#TRAIN DECISION] 3 [Mean Prob] 0.9426050707077877 [Example Ids] [281706, 272855, 48542]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [281706, 272855, 48542]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [281706]
+==============================
+[LEVEL] 3
+[RULE] 重新组合 <pad>x4,9 ENTITY1:person <pad>x1,3 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9772982361998389 [Example Ids] [257959, 257993, 257991]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [257993, 257959, 257991]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x10, 完颜洪烈
+[#TRAIN DECISION] 3 [Mean Prob] 0.9666571349636467 [Example Ids] [272438, 273082, 273086]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [272438, 273082, 273086]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 下嫁 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.972967429315975 [Example Ids] [283170, 285281, 286014]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [286014, 283170, 285281]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x4,9 ENTITY2:person 之夫
+[#TRAIN DECISION] 3 [Mean Prob] 0.9726713077170652 [Example Ids] [283107, 283109, 283110]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [283107, 283109, 283110]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283107]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 幸福
+[#TRAIN DECISION] 3 [Mean Prob] 0.9664390827716657 [Example Ids] [258292, 160497, 268245]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [258292, 160497, 268245]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 0.0 [Example Ids] [160497]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 玻璃
+[#TRAIN DECISION] 3 [Mean Prob] 0.9560745948086868 [Example Ids] [276875, 276895, 276872]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [276872, 276875, 276895]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [276872]
+[Child] ==============================
+        [LEVEL] 4
+        [RULE] ENTITY1:person 、 ENTITY2:person <pad>x1,3 玻璃
+        [#TRAIN DECISION] 3 [Mean Prob] 0.7763284597609967 [Example Ids] [276895, 276872, 276875]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [276872, 276875, 276895]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [276872]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 完婚
+[#TRAIN DECISION] 3 [Mean Prob] 0.9613796209107569 [Example Ids] [256043, 255912, 268033]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [268033, 256043, 255912]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [256043]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 求婚
+[#TRAIN DECISION] 3 [Mean Prob] 0.968736323043666 [Example Ids] [267357, 267362, 85075]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [85075, 267357, 267362]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [267362]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 万儿
+[#TRAIN DECISION] 3 [Mean Prob] 0.9713883701435755 [Example Ids] [257360, 257310, 257367]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [257310, 257367, 257360]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [257367, 257310]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 函
+[#TRAIN DECISION] 3 [Mean Prob] 0.9655236717734924 [Example Ids] [255920, 255828, 74862]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [255828, 255920, 74862]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [74862, 255920]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x10, ENTITY2:person <pad>x1,3 求婚
+[#TRAIN DECISION] 3 [Mean Prob] 0.9763454915492199 [Example Ids] [286569, 224903, 91493]
+[#TRAIN MATCH] 3 [Acc] 0.3333333333333333 [Example Ids] [286569, 91493, 224903]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.5 [Example Ids] [91493, 286569]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x4,9 携
+[#TRAIN DECISION] 3 [Mean Prob] 0.9753624299207427 [Example Ids] [267103, 267123, 267101]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+[Child] ==============================
+        [LEVEL] 8
+        [RULE] 钱王 秘库 <pad>x1,3 七星 <pad>x4,9 ENTITY1:person 与 ENTITY2:person <pad>x1,3 王宝 <pad>x4,9 携
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9874991288297544 [Example Ids] [267103, 267123, 267101]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+[Child] [Child] ==============================
+                [LEVEL] 11
+                [RULE] 钱王 秘库 <pad>x1,3 七星 <pad>x4,9 ENTITY1:person 与 ENTITY2:person 起 <pad>x1,3 王宝 <pad>x1,3 之前 <pad>x1,3 携 <pad>x1,3 三分之一
+                [#TRAIN DECISION] 3 [Mean Prob] 0.9327479771692095 [Example Ids] [267103, 267123, 267101]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+[Child] [Child] [Child] ==============================
+                        [LEVEL] 12
+                        [RULE] 钱王 秘库 <pad>x1,3 七星 <pad>x4,9 ENTITY1:person 与 ENTITY2:person 起 出钱 王宝 <pad>x1,3 之前 <pad>x1,3 携 <pad>x1,3 三分之一
+                        [#TRAIN DECISION] 3 [Mean Prob] 0.9350098008235562 [Example Ids] [267103, 267123, 267101]
+                        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [267101, 267103, 267123]
+                        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                        [#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [267103, 267101, 267123]
+==============================
+[LEVEL] 3
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 求婚
+[#TRAIN DECISION] 3 [Mean Prob] 0.9755974924955227 [Example Ids] [270675, 266268, 267410]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [270675, 267410, 266268]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 1.0 [Example Ids] [270675, 266268, 267410]
+==============================
+[LEVEL] 3
+[RULE] 结婚 <pad>x1,3 ENTITY1:person <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9769860597775933 [Example Ids] [25536, 157746, 214551]
+[#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [157746, 25536, 214551]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 3 [Acc] 0.0 [Example Ids] [214551, 157746, 25536]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person ENTITY2:person 夫妻 <pad>x1,3 帮主
+[#TRAIN DECISION] 3 [Mean Prob] 0.9865323642462656 [Example Ids] [269673, 269671, 269686]
+[#TRAIN MATCH] 7 [Acc] 1.0 [Example Ids] [269650, 269648, 269686, 269673, 269671]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 5 [Acc] 1.0 [Example Ids] [269648, 269673, 269671, 269650, 269651]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person <pad>x1,3 金无望 <pad>x4,9 ENTITY2:person <pad>x1,3 白飞飞
+[#TRAIN DECISION] 3 [Mean Prob] 0.9830691204069274 [Example Ids] [253623, 253669, 275133]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [253623, 275133, 253669]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 0 [Acc] -1 [Example Ids] []
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person <pad>x1,3 许家 <pad>x4,9 演员 <pad>x4,9 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.9677485545206189 [Example Ids] [275489, 275492, 275480]
+[#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [275480, 275489, 275492]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [275492, 275489]
+[Child] ==============================
+        [LEVEL] 7
+        [RULE] ENTITY1:person <pad>x1,3 许家 <pad>x1,3 导演 、 演员 <pad>x1,3 女儿 <pad>x1,3 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.8789142841789156 [Example Ids] [275492, 275480, 275489]
+        [#TRAIN MATCH] 3 [Acc] 0.0 [Example Ids] [275480, 275489, 275492]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 2 [Acc] 0.0 [Example Ids] [275492, 275489]
+==============================
+[LEVEL] 4
+[RULE] ENTITY1:person <pad>x1,3 爱情 <pad>x10, ENTITY2:person <pad>x10, 爱情故事
+[#TRAIN DECISION] 3 [Mean Prob] 0.9832664399557464 [Example Ids] [283623, 283634, 283626]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [283623, 283634, 283626]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283634]
+[Child] ==============================
+        [LEVEL] 12
+        [RULE] 吴亦凡 <pad>x1,3 ENTITY1:person <pad>x1,3 爱情 真诚 <pad>x1,3 爱上 <pad>x1,3 倔强 、 <pad>x1,3 ENTITY2:person <pad>x1,3 饰 <pad>x1,3 两人 <pad>x4,9 纠结 <pad>x1,3 爱情故事
+        [#TRAIN DECISION] 3 [Mean Prob] 0.9465471932754183 [Example Ids] [283623, 283634, 283626]
+        [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [283623, 283634, 283626]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283634]
+[Child] [Child] ==============================
+                [LEVEL] 14
+                [RULE] 吴亦凡 <pad>x1,3 ENTITY1:person <pad>x1,3 爱情 真诚 <pad>x1,3 爱上 <pad>x1,3 倔强 、 <pad>x1,3 ENTITY2:person <pad>x1,3 刘亦菲 饰 <pad>x1,3 两人 <pad>x1,3 一段 <pad>x1,3 纠结 <pad>x1,3 爱情故事
+                [#TRAIN DECISION] 3 [Mean Prob] 0.95082613311775 [Example Ids] [283623, 283634, 283626]
+                [#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [283623, 283634, 283626]
+                [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+                [#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [283634]
+==============================
+[LEVEL] 5
+[RULE] ENTITY1:person 、 <pad>x1,3 、 <pad>x1,3 、 ENTITY2:person
+[#TRAIN DECISION] 3 [Mean Prob] 0.8121705083988663 [Example Ids] [125007, 158717, 25722]
+[#TRAIN MATCH] 36 [Acc] 0.3611111111111111 [Example Ids] [250058, 199212, 249065, 186633, 227980]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 14 [Acc] 0.35714285714285715 [Example Ids] [158717, 262361, 43663, 281450, 139184]
+[Child] ==============================
+        [LEVEL] 6
+        [RULE] 、 ENTITY1:person 、 <pad>x1,3 、 <pad>x1,3 、 ENTITY2:person
+        [#TRAIN DECISION] 3 [Mean Prob] 0.803201157743294 [Example Ids] [264065, 256359, 191926]
+        [#TRAIN MATCH] 15 [Acc] 0.5333333333333333 [Example Ids] [199212, 249065, 280794, 285704, 267382]
+        [#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+        [#TEST MATCH] 4 [Acc] 0.5 [Example Ids] [43663, 267384, 267358, 191926]
+==============================
+[LEVEL] 11
+[RULE] 女娲 <pad>x4,9 人世间 <pad>x1,3 ENTITY1:person 邂逅 驱魔龙族 马氏 第四十 <pad>x1,3 ENTITY2:person <pad>x1,3 两人 互生 情愫
+[#TRAIN DECISION] 3 [Mean Prob] 0.9219321950963514 [Example Ids] [262678, 262654, 262657]
+[#TRAIN MATCH] 3 [Acc] 1.0 [Example Ids] [262678, 262657, 262654]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 2 [Acc] 1.0 [Example Ids] [262678, 262654]
+==============================
+[LEVEL] 15
+[RULE] ENTITY1:person <pad>x1,3 ENTITY2:person <pad>x1,3 茄官 、 银蝶 <pad>x1,3 、 万儿 、 来升 、 喜儿 、 寿儿 、 栓儿
+[#TRAIN DECISION] 3 [Mean Prob] 0.9141759648102555 [Example Ids] [257350, 276516, 257325]
+[#TRAIN MATCH] 3 [Acc] 0.6666666666666666 [Example Ids] [257350, 276516, 257325]
+[#DEV MATCH] 0 [Acc] -1 [Example Ids] []
+[#TEST MATCH] 1 [Acc] 1.0 [Example Ids] [257325]
