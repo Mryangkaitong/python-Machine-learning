@@ -16,4 +16,4 @@ https://blog.csdn.net/weixin_42001089/article/details/91388707
 
 #监督学习
 deepdive是一个半监督的学习框架，关于关系抽取其实也有很多使用深度学习进行的全监督方式：
-https://github.com/Mryangkaitong/Chinese_NRE/blob/master/README.md
+https://github.com/Mryangkaitong/Chinese_NRE
