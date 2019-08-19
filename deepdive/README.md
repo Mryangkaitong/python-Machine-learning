@@ -5,6 +5,7 @@
 
 demo_version_1和demo_version_2是两种优化方法,demo_version_3是多种关系抽取demo
 
+如果是基于python3的话需要改一下源码，可以直接将ddlib目录下的四个文件复制替换安装的ddlib
 
 其中deepdive有打标环节，需要人工定义规则，为此为了减轻工作量，这里采用了自动提取规则，具体可以看Extraction_rules
 
